@@ -71,7 +71,7 @@ Su Windows lo script trova da solo Chrome o Edge; altrimenti `CHROME="/percorso/
 
 **Convertire in JPEG** per Instagram (l'API non accetta PNG): `python pubblicazione/png2jpg.py post/png/11-*.png` (serve `pip install pillow`).
 
-**Aggiungere al calendario:** una voce in `pubblicazione/calendario.json` (`id`, `quando` in ora italiana `AAAA-MM-GGTHH:MM`, `rubrica`, `immagini` in ordine, `caption`) e la stessa caption in `pubblicazione/caption.md`. Ritmo: 3 post a settimana, martedì, giovedì e sabato. Rispetta il mix 40/25/20/15 e la regola dei fondi alternati.
+**Aggiungere al calendario:** una voce in `pubblicazione/calendario.json` (`id`, `quando` in ora italiana `AAAA-MM-GGTHH:MM`, `rubrica`, `immagini` in ordine, `caption`) e la stessa caption in `pubblicazione/caption.md`. Ritmo (dal 28/10/2026, deciso da Alessio): **un post al giorno**, di sera (18:30–19:00, i "Lo sapevi?" brevi anche alle 13:00). Mai le 21:00. Rispetta il mix 40/25/20/15 e la regola dei fondi alternati.
 
 **Caption:** prima riga = l'hook (deve reggere prima del "… altro"), poi 1–3 frasi utili o evocative, una sola richiesta finale (salva, manda a qualcuno, commenta), 5 hashtag in fondo con sempre `#winelife`. Esempi in `pubblicazione/caption.md`.
 
@@ -90,7 +90,7 @@ Su Windows lo script trova da solo Chrome o Edge; altrimenti `CHROME="/percorso/
 | 09 vermentino | gio 19/11 18:30 | Vino in 30 secondi | 5 |
 | 10 il-momento-giusto | sab 21/11 18:30 | Un calice di pensieri | 1 |
 
-Dal 22/11 in poi il calendario è vuoto: i prossimi post sono da creare.
+Dal 28/10 si pubblica ogni giorno: i giorni vuoti dall'1/11 al 20/11 (12 post) sono pianificati in `~/.claude/instagram/plan.md` e vanno creati con `/nuovo-post`; dal 22/11 il calendario è vuoto.
 
 ## Pubblicazione automatica: stato al 28/10/2026
 
