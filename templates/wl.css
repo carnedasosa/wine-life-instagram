@@ -1,0 +1,101 @@
+/* Wine Life · template Instagram 1080x1350 (brand kit v3)
+   Tutte le misure sono in px reali sul canvas 1080x1350. Non toccare: cambia solo i testi negli HTML. */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Serif:ital@1&family=Geist:wght@400..600&family=Geist+Mono:wght@400;500&display=block");
+
+:root{
+  --vino:#5B0E22; --rose:#F7B9C4; --latte:#F5EEE6; --ink:#150A0D; --fumo:#A18E92;
+  --latte-2:#EBE1D6; /* riquadri su Latte: Latte scurito del 4% */
+  --f-display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --f-accent:"Instrument Serif",Georgia,serif;
+  --f-text:"Geist","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ink)}
+body.single{width:1080px;height:1350px;overflow:hidden}
+
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;isolation:isolate;
+  font-family:var(--f-text);-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+.slide.vino{background:var(--vino);color:var(--latte)}
+.slide.rose{background:var(--rose);color:var(--vino)}
+.slide.latte{background:var(--latte);color:var(--ink)}
+.slide.foto{background:var(--ink);color:var(--latte)}
+
+/* grana: sempre, su ogni slide */
+.slide::after{content:"";position:absolute;inset:0;z-index:20;pointer-events:none;opacity:.2;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* area utile: margini 80 px */
+.in{position:absolute;inset:80px;display:flex;flex-direction:column;z-index:5}
+.has-bars .in{top:104px}
+.top,.bot{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.bot{margin-top:auto}
+
+/* barra a segmenti stile storie (caroselli) */
+.bars{position:absolute;top:40px;left:80px;right:80px;display:flex;gap:10px;z-index:6}
+.bars i{flex:1;height:6px;border-radius:6px;background:currentColor;opacity:.22}
+.bars i.on{opacity:1}
+
+/* pill rubrica */
+.pill{display:inline-flex;align-items:center;border:2px solid currentColor;border-radius:999px;padding:12px 28px 13px;
+  font-family:var(--f-text);font-weight:500;font-size:30px;line-height:1;white-space:nowrap;letter-spacing:-.005em}
+.pill.fill{background:var(--vino);border-color:var(--vino);color:var(--latte)}
+.pill.fill-rose{background:var(--rose);border-color:var(--rose);color:var(--vino)}
+.handle{font-family:var(--f-text);font-weight:500;font-size:28px;opacity:.78}
+.mono{font-family:var(--f-mono);font-size:25px;text-transform:uppercase;letter-spacing:.04em}
+
+/* titoli: Bricolage, compatti. <em> = la sola parola in corsivo serif */
+.d{font-family:var(--f-display);font-weight:600;letter-spacing:-.04em;line-height:.95;text-wrap:balance}
+.d em{font-family:var(--f-accent);font-style:italic;font-weight:400;letter-spacing:-.01em;font-size:1.1em;line-height:.8}
+.vino .d em,.foto .d em{color:var(--rose)}
+.rose .d em,.latte .d em{color:var(--vino)}
+.hook{font-size:112px}
+.title{font-size:86px}
+.big{font-size:180px;line-height:.86}
+.num{font-family:var(--f-display);font-weight:700;font-size:440px;line-height:.76;letter-spacing:-.06em;margin-left:-14px}
+.t{font-size:42px;line-height:1.28;font-weight:400;text-wrap:pretty}
+.t b{font-weight:600}
+.mark{background:var(--rose);color:var(--vino);padding:0 .12em;border-radius:.12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* freccia tonda in basso a destra */
+.arrow{width:104px;height:104px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-text);font-size:46px;font-weight:500}
+.vino .arrow,.foto .arrow{background:var(--latte);color:var(--vino)}
+.rose .arrow,.latte .arrow{background:var(--vino);color:var(--latte)}
+
+/* sticker rotondo, ruotato -10°, max uno per post */
+.sticker{position:absolute;z-index:8;width:236px;height:236px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  text-align:center;font-family:var(--f-accent);font-style:italic;font-size:52px;line-height:.92;transform:rotate(-10deg)}
+.sticker.s-vino{background:var(--vino);color:var(--rose)}
+.sticker.s-rose{background:var(--rose);color:var(--vino)}
+
+/* riquadri dati (Vino in 30 secondi) */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tile{background:var(--latte-2);border-radius:32px;padding:34px 36px 38px;display:grid;gap:12px;align-content:start}
+.tile span{font-family:var(--f-mono);font-size:25px;text-transform:uppercase;letter-spacing:.04em;opacity:.65}
+.tile b{font-family:var(--f-text);font-weight:500;font-size:42px;line-height:1.12;letter-spacing:-.01em}
+.tile.hi{background:var(--vino);color:var(--latte)}
+
+/* chip su foto */
+.chips{display:flex;flex-wrap:wrap;gap:16px}
+.chip{border-radius:999px;padding:16px 32px 17px;font-weight:500;font-size:31px;line-height:1;
+  background:rgba(245,238,230,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.latte .chip{background:var(--latte-2)}
+
+/* elenco numerato (slide interne) */
+.idx{font-family:var(--f-display);font-weight:700;font-size:150px;line-height:.8;letter-spacing:-.05em}
+.latte .idx{color:var(--vino)}
+
+/* logo */
+.wm{font-family:var(--f-display);font-weight:700;letter-spacing:-.04em;line-height:1}
+.wm em{font-family:var(--f-accent);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--rose)}
+
+/* ---------- FOTO ----------
+   Per usare la tua foto: dentro <div class="photo"> sostituisci <div class="ph"></div> con <img src="tua-foto.jpg" alt="">.
+   Senza foto resta un fondo scuro neutro: niente illustrazioni al posto delle foto. */
+.photo{position:absolute;inset:0;z-index:0}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{position:absolute;inset:0;background:
+  radial-gradient(70% 55% at 70% 70%, rgba(91,14,34,.85), transparent 70%),
+  linear-gradient(180deg,#1d0b10 0%,#150A0D 100%)}
+.ph > *{display:none}
+.shade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,5,7,.82) 0%,rgba(18,5,7,.2) 40%,rgba(18,5,7,0) 58%,rgba(18,5,7,.75) 100%)}

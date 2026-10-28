@@ -1,0 +1,39 @@
+name: Pubblica su Instagram
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # ogni 30 minuti controlla il calendario
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "id del post da pubblicare subito (vuoto = segui il calendario)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pubblicazione
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pubblica i post arrivati alla loro ora
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/pubblicazione/jpg
+          POST_ID: ${{ inputs.post }}
+        run: |
+          if [ -n "$POST_ID" ]; then python3 publish.py --post "$POST_ID"; else python3 publish.py --due; fi
+      - name: Salva lo stato
+        run: |
+          git config user.name "wine-life-bot"
+          git config user.email "actions@github.com"
+          git add pubblicati.json 2>/dev/null || exit 0
+          git diff --cached --quiet || (git commit -m "Pubblicato su Instagram" && git push)

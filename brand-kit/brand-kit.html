@@ -1,0 +1,571 @@
+<title>Wine Life Brand Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@1&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: kit a blocchi di colore pieno, come un feed Instagram scrollato; anteprime post 4:5 in scala reale (100cqw = 1080px) */
+:root{
+  --vino:#5B0E22;       /* Vino: colore di marca, fondo pieno */
+  --ink:#150A0D;        /* Inchiostro: fondo scuro, testo su chiaro */
+  --latte:#F5EEE6;      /* Latte: fondo chiaro, testo su scuro */
+  --rose:#F7B9C4;       /* Rosé: colore pop, evidenziatore, sticker */
+  --fumo:#A18E92;       /* Fumo: testo secondario su scuro */
+  --line-d:rgba(245,238,230,.14);
+  --f-display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --f-accent:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-text:"Geist","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--latte);font-family:var(--f-text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.04em}
+p{margin:0}
+em{font-style:italic;font-family:var(--f-accent);font-weight:400;letter-spacing:-.01em}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid currentColor;border-radius:999px;padding:5px 14px;font-size:12px;font-weight:500;letter-spacing:.01em;white-space:nowrap}
+.pill.fill{background:var(--rose);color:var(--vino);border-color:var(--rose)}
+.mono{font-family:var(--f-mono);font-size:12px}
+.muted{color:var(--fumo)}
+.hl{background:linear-gradient(transparent 58%, rgba(247,185,196,.55) 58%, rgba(247,185,196,.55) 92%, transparent 92%);padding:0 .08em}
+
+/* Hero */
+.hero{background:var(--vino);overflow:hidden;position:relative}
+.hero .wrap{padding-block:56px 64px;display:grid;gap:28px}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hero h1{font-size:clamp(80px,17vw,230px);line-height:.85;letter-spacing:-.035em;font-weight:700}
+.hero h1 em{letter-spacing:-.03em;font-size:1.1em}
+.hero h1 em{color:var(--rose)}
+.hero-bottom{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end}
+.hero .lead{font-size:clamp(18px,2.2vw,24px);max-width:34ch;line-height:1.35}
+.stickers{display:flex;gap:10px;flex-wrap:wrap}
+.sticker{width:116px;height:116px;border-radius:50%;background:var(--rose);color:var(--vino);display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--f-accent);font-style:italic;font-size:22px;line-height:1;transform:rotate(-10deg)}
+
+/* Sezioni */
+section{padding-block:72px}
+section + section{border-top:1px solid var(--line-d)}
+.band-latte{background:var(--latte);color:var(--ink)}
+.band-latte .muted{color:#6E5D61}
+.band-latte .pill{color:var(--vino)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(44px,7vw,88px);line-height:.92}
+.sec-head p{max-width:44ch;font-size:16px}
+.sec-head .left{display:grid;gap:16px;justify-items:start}
+
+/* Essenza */
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.box{border-radius:20px;padding:28px;display:grid;gap:14px;align-content:start}
+.box h3{font-size:34px;line-height:1}
+.box ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:16px}
+.box.yes{background:var(--vino)}
+.box.no{background:transparent;border:1px solid var(--line-d)}
+.box.no li{color:var(--fumo)}
+.box.yes li::before{content:"→ ";color:var(--rose)}
+.box.no li::before{content:"× ";color:var(--fumo)}
+.hooks{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hook{background:#22141A;border-radius:20px;padding:24px;display:grid;gap:14px;align-content:space-between;min-height:200px}
+.hook p.big{font-family:var(--f-display);font-weight:600;font-size:28px;line-height:1.05;letter-spacing:-.03em}
+.hook p.big em{color:var(--rose)}
+.hook .mono{color:var(--fumo)}
+.voice{margin-top:16px;border:1px solid var(--line-d);border-radius:20px;overflow:hidden}
+.voice-row{display:grid;grid-template-columns:150px 1fr 1fr;gap:24px;padding:18px 24px;align-items:start}
+.voice-row + .voice-row{border-top:1px solid var(--line-d)}
+.voice-row .k{font-size:13px;font-weight:600}
+.voice-row .y{font-family:var(--f-display);font-weight:500;font-size:20px;line-height:1.2;letter-spacing:-.02em}
+.voice-row .n{color:var(--fumo);text-decoration:line-through;text-decoration-color:rgba(247,185,196,.5);font-size:14px}
+
+/* Palette */
+.palette{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:12px;min-height:340px}
+.sw{border-radius:20px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:180px}
+.sw .n{font-family:var(--f-display);font-weight:600;font-size:34px;line-height:1;letter-spacing:-.03em}
+.sw .r{font-size:13px;opacity:.85;margin-top:6px}
+.sw .hex{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--f-mono);font-size:13px}
+.copy{background:transparent;border:1px solid currentColor;color:inherit;border-radius:999px;font:inherit;font-size:11px;padding:3px 10px;cursor:pointer}
+.copy:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.combos{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.combo{border-radius:16px;padding:18px;min-height:110px;display:flex;flex-direction:column;justify-content:space-between}
+.combo b{font-family:var(--f-display);font-weight:600;font-size:34px;line-height:1}
+.combo small{font-family:var(--f-mono);font-size:11px;opacity:.8}
+.note{margin-top:16px;font-size:13px}
+
+/* Tipografia */
+.type{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+.spec{border-radius:20px;padding:28px;display:grid;gap:18px;align-content:space-between}
+.spec .demo-d{font-family:var(--f-display);font-weight:600;font-size:clamp(56px,8vw,104px);line-height:.88;letter-spacing:-.05em}
+.spec .demo-d em{color:var(--rose)}
+.spec .demo-t{font-size:22px;line-height:1.35;font-weight:400}
+.spec .meta{display:flex;flex-wrap:wrap;gap:8px}
+.scale-wrap{overflow-x:auto;margin-top:16px;border:1px solid var(--line-d);border-radius:20px}
+.scale{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+.scale th,.scale td{text-align:left;padding:14px 20px;vertical-align:baseline}
+.scale tr + tr td{border-top:1px solid var(--line-d)}
+.scale th{font-size:12px;font-weight:600;color:var(--fumo);border-bottom:1px solid var(--line-d)}
+.scale td.n{font-family:var(--f-mono);font-size:13px;white-space:nowrap}
+
+/* Logo */
+.logos{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px}
+.logo{border-radius:20px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;padding:20px}
+.logo .stage{flex:1;display:flex;align-items:center;justify-content:center;padding-block:20px}
+.logo .cap{font-size:13px;opacity:.8}
+.wm{font-family:var(--f-display);font-weight:700;font-size:clamp(52px,6.5vw,80px);letter-spacing:-.035em;line-height:1}
+.wm em{font-size:1.12em;letter-spacing:-.02em}
+.wm em{color:var(--rose)}
+.avatar{width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-accent);font-style:italic;font-size:78px;letter-spacing:-.06em;padding-right:6px;padding-bottom:10px}
+.rules-inline{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+
+/* Elementi */
+.elements{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.el{background:#22141A;border-radius:20px;overflow:hidden}
+.el .stage{height:160px;display:flex;align-items:center;justify-content:center;gap:10px;position:relative;padding:20px}
+.el .cap{padding:16px 20px 20px;font-size:14px;color:var(--fumo)}
+.el .cap b{display:block;color:var(--latte);font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;font-size:21px;line-height:1.1;margin-bottom:4px}
+.bars{display:flex;gap:6px;width:80%}
+.bars i{flex:1;height:4px;border-radius:4px;background:rgba(245,238,230,.25)}
+.bars i.on{background:var(--latte)}
+.arrow{width:56px;height:56px;border-radius:50%;background:var(--latte);color:var(--vino);display:flex;align-items:center;justify-content:center;font-size:24px}
+
+/* Post */
+.post{container-type:inline-size;aspect-ratio:4/5;width:100%;max-width:100%;position:relative;overflow:hidden;border-radius:14px;isolation:isolate}
+.post .in{position:absolute;inset:7.4cqw;display:flex;flex-direction:column;z-index:3}
+.post .top{display:flex;justify-content:space-between;align-items:center;gap:2cqw}
+.post .ptag{border:max(1px,.18cqw) solid currentColor;border-radius:99cqw;padding:1.3cqw 3cqw;font-family:var(--f-text);font-weight:500;font-size:2.6cqw;white-space:nowrap}
+.post .handle{font-family:var(--f-text);font-weight:500;font-size:2.4cqw;opacity:.75}
+.post .bot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:2cqw}
+.post .bars{position:absolute;top:3.4cqw;left:7.4cqw;right:7.4cqw;width:auto;gap:1cqw;z-index:4}
+.post .bars i{height:.55cqw;min-height:2px;border-radius:1cqw}
+.post .d{font-family:var(--f-display);font-weight:600;letter-spacing:-.045em;line-height:.95}
+.post .d em{font-size:1.1em}
+.post .d em{font-style:italic}
+.post .t{font-family:var(--f-text);font-size:3.8cqw;line-height:1.3;font-weight:400}
+.post .stk{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--f-accent);font-style:italic;line-height:.95;transform:rotate(-10deg);z-index:4}
+.post .arrowb{width:10cqw;height:10cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:4.4cqw}
+.post .chips{display:flex;flex-wrap:wrap;gap:1.6cqw}
+.post .chip{border-radius:99cqw;padding:1.5cqw 3.2cqw;font-family:var(--f-text);font-weight:500;font-size:2.9cqw;background:rgba(245,238,230,.16);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.post .tiles{display:grid;grid-template-columns:1fr 1fr;gap:2cqw;margin-top:auto}
+.post .tile{border-radius:3cqw;padding:3cqw;display:grid;gap:1cqw}
+.post .tile span{font-family:var(--f-mono);font-size:2.3cqw;text-transform:uppercase;letter-spacing:.04em;opacity:.7}
+.post .tile b{font-family:var(--f-text);font-weight:500;font-size:3.6cqw;line-height:1.15}
+.flash{background:
+  radial-gradient(28% 22% at 56% 40%, rgba(255,250,244,.55), transparent 70%),
+  radial-gradient(55% 45% at 55% 45%, rgba(170,40,60,.55), transparent 75%),
+  radial-gradient(120% 90% at 50% 40%, #3a0a16 0%, #120507 70%)}
+.flash .table{position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(180deg,#e7dcd0,#bfb0a2);z-index:0}
+.flash .glass{position:absolute;left:38%;bottom:10%;width:33%;z-index:1;filter:drop-shadow(1.5cqw 2cqw 2cqw rgba(0,0,0,.45))}
+.flash .shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(18,5,7,.75) 0%,rgba(18,5,7,0) 38%,rgba(18,5,7,0) 62%,rgba(18,5,7,.7) 100%)}
+.grain::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.18;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.rubrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rubric .meta{margin-top:14px;display:grid;gap:6px}
+.rubric .meta h3{font-size:28px;line-height:1}
+.rubric .meta p{font-size:14px;color:var(--fumo)}
+.rubric .meta .pill{justify-self:start;color:var(--rose)}
+.carousel{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:48px}
+.cap-row{margin-top:14px;font-size:14px;color:var(--fumo)}
+
+/* Layout */
+.layout{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:40px;align-items:start}
+.gd{position:relative;aspect-ratio:4/5;width:100%;background:#22141A;border-radius:14px;container-type:inline-size;overflow:hidden}
+.gd .crop{position:absolute;top:0;bottom:0;left:3.15cqw;right:3.15cqw;border-left:1px dashed var(--rose);border-right:1px dashed var(--rose);opacity:.7}
+.gd .safe{position:absolute;inset:7.4cqw;border:1px solid rgba(245,238,230,.5);border-radius:2cqw}
+.gd .z{position:absolute;left:7.4cqw;right:7.4cqw;border-radius:2cqw;display:flex;align-items:center;justify-content:center;font-family:var(--f-mono);font-size:3cqw;background:rgba(247,185,196,.12);color:var(--latte)}
+.gd .z1{top:7.4cqw;height:8cqw}
+.gd .z2{top:19cqw;bottom:19cqw;background:rgba(91,14,34,.6)}
+.gd .z3{bottom:7.4cqw;height:8cqw}
+.gd .dim{position:absolute;font-family:var(--f-mono);font-size:2.8cqw;color:var(--rose)}
+dl.specs{margin:0;display:grid}
+dl.specs div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding-block:14px;border-top:1px solid var(--line-d);font-size:15px}
+dl.specs dt{font-weight:600}
+dl.specs dd{margin:0;color:var(--fumo)}
+
+/* Profilo */
+.profile-wrap{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:48px;align-items:start}
+.phone{background:#0B0507;border:1px solid var(--line-d);border-radius:36px;padding:22px 14px 14px;max-width:380px;width:100%}
+.ph-head{display:flex;gap:18px;align-items:center;padding:0 6px}
+.ph-av{width:76px;height:76px;flex:none;border-radius:50%;background:var(--rose);color:var(--vino);display:flex;align-items:center;justify-content:center;font-family:var(--f-accent);font-style:italic;font-size:40px;letter-spacing:-.06em;padding-bottom:5px;box-shadow:0 0 0 2px #0B0507,0 0 0 4px var(--vino)}
+.ph-stats{display:flex;gap:18px;font-size:12px;text-align:center}
+.ph-stats b{display:block;font-size:15px}
+.ph-bio{padding:12px 6px 0;font-size:13px;line-height:1.4}
+.ph-bio b{font-weight:600}
+.ph-hl{display:flex;gap:12px;padding:16px 6px;overflow:hidden}
+.ph-hl div{display:grid;gap:5px;justify-items:center;font-size:10px;flex:none}
+.ph-hl span{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f-accent);font-style:italic;font-size:22px;border:1px solid var(--line-d)}
+.ph-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;border-radius:0 0 22px 22px;overflow:hidden}
+.ph-grid .c{aspect-ratio:3/4;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;min-width:0}
+.ph-grid .c b{position:relative;z-index:3;font-family:var(--f-display);font-weight:600;letter-spacing:-.04em;line-height:.95}
+.feed-rules{list-style:none;margin:0;padding:0;display:grid}
+.feed-rules li{display:grid;grid-template-columns:auto 1fr;gap:16px;padding-block:16px;border-top:1px solid var(--line-d);font-size:15px}
+.feed-rules li::before{content:"→";color:var(--rose)}
+.feed-rules b{font-weight:600}
+
+/* Moodboard */
+.mood{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.scene{border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start;min-height:200px}
+.scene h3{font-size:30px;line-height:1}
+.scene p{font-size:14px;opacity:.85}
+.scene .mono{opacity:.7}
+.words{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.words span{border:1px solid var(--line-d);border-radius:999px;padding:8px 16px;font-size:15px}
+.words span:nth-child(4n+1){background:var(--rose);color:var(--vino);border-color:var(--rose)}
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.grade div{background:#22141A;border-radius:16px;padding:18px;font-size:14px;color:var(--fumo)}
+.grade b{display:block;color:var(--latte);font-weight:600;margin-bottom:4px}
+
+footer{padding-block:40px 64px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--fumo);font-size:13px;border-top:1px solid var(--line-d)}
+
+@media (max-width:960px){
+  .rubrics{grid-template-columns:repeat(2,1fr)}
+  .palette{grid-template-columns:1fr 1fr}
+  .palette .sw:first-child{grid-column:1/-1}
+  .hooks,.elements,.mood{grid-template-columns:1fr 1fr}
+  .logos{grid-template-columns:1fr 1fr}
+  .logos .logo:first-child{grid-column:1/-1}
+  .layout,.profile-wrap,.type{grid-template-columns:1fr}
+  .carousel{grid-template-columns:repeat(5,minmax(170px,1fr));overflow-x:auto;padding-bottom:8px}
+}
+@media (max-width:600px){
+  .cols2,.hooks,.elements,.mood,.rubrics,.logos{grid-template-columns:1fr}
+  .combos,.grade{grid-template-columns:1fr 1fr}
+  .hero-bottom{grid-template-columns:1fr}
+  .voice-row{grid-template-columns:1fr;gap:6px}
+  dl.specs div{grid-template-columns:1fr;gap:2px}
+  .sticker{width:96px;height:96px;font-size:19px}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="glass" viewBox="0 0 100 200">
+      <path d="M27 44 L73 44 C71 70 63 82 50 85 C37 82 29 70 27 44 Z" fill="#7A0F28"/>
+      <path d="M27 44 L73 44" stroke="#B3243F" stroke-width="1.4"/>
+      <path d="M25 10 L75 10 C78 55 68 80 50 85 C32 80 22 55 25 10 Z" fill="rgba(255,255,255,.06)" stroke="#fff" stroke-opacity=".8" stroke-width="1.1"/>
+      <path d="M31 15 C30 38 33 58 39 70" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".9"/>
+      <path d="M66 20 C67 30 66 40 64 48" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".6"/>
+      <rect x="49" y="85" width="2" height="80" fill="#fff" fill-opacity=".8"/>
+      <ellipse cx="50" cy="167" rx="22" ry="3.5" fill="rgba(255,255,255,.15)" stroke="#fff" stroke-opacity=".8" stroke-width="1.1"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="pill">Brand kit · v3</span>
+      <span class="pill">@winelife</span>
+    </div>
+    <h1>wine<br><em>life</em></h1>
+    <div class="hero-bottom">
+      <p class="lead">Il vino come stile di vita. Frasi da mandare a qualcuno, curiosità da salvare, vini spiegati in 30 secondi.</p>
+      <div class="stickers"><span class="sticker">elegante,<br>mai snob</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Essenza -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Chi siamo</span><h2>Il vino,<br><em>senza la puzza<br>sotto il naso</em></h2></div>
+        <p class="muted">Wine Life parla come l'amico che ne sa di vino: ti dice cosa ordinare, cosa regalare e perché, in due frasi. Si ferma lo scroll con un'idea forte, mai con un urlo.</p>
+      </div>
+      <div class="cols2">
+        <div class="box yes"><h3>Sì</h3><ul><li>Frasi brevi che vuoi mandare a qualcuno</li><li>Consigli concreti: cosa bere, cosa portare, cosa regalare</li><li>Un vino spiegato in 30 secondi, con parole normali</li><li>Foto vere, con luce forte e grana, senza volti</li></ul></div>
+        <div class="box no"><h3>No</h3><ul><li>Gergo da sommelier e schede tecniche</li><li>Meme, battute sull'alcol, emoji a pioggia</li><li>Oro, damaschi, calici disegnati, estetica da enoteca anni 2000</li><li>Immagini stock luminose e finte</li></ul></div>
+      </div>
+
+      <div class="hooks">
+        <div class="hook"><p class="big">Smetti di ordinare <em>sempre</em> il Prosecco.</p><span class="mono">Hook · consiglio</span></div>
+        <div class="hook"><p class="big">Nessuno te lo dice, ma il rosso <em>non</em> va servito a temperatura ambiente.</p><span class="mono">Hook · lo sapevi</span></div>
+        <div class="hook"><p class="big">3 bottiglie da portare a cena se <em>non ne sai niente</em>.</p><span class="mono">Hook · carosello</span></div>
+      </div>
+
+      <div class="voice">
+        <div class="voice-row"><span class="k">Diretto</span><span class="y">Un rosso giovane chiede compagnia, non silenzio.</span><span class="n">Vino rosso perfetto per la cena!!! 🍷🍷</span></div>
+        <div class="voice-row"><span class="k">Semplice</span><span class="y">I tannini sono quella sensazione che ti asciuga la bocca, come un tè lasciato in infusione.</span><span class="n">Tannini polimerizzati con buona trama e astringenza.</span></div>
+        <div class="voice-row"><span class="k">Vero</span><span class="y">Certe bottiglie si aprono per festeggiare. Altre, per ricordare.</span><span class="n">Il vino è l'essenza magica dell'anima universale.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palette -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Palette</span><h2>Vino, rosé<br>e <em>niente oro</em></h2></div>
+        <p class="muted">Un rosso profondo come colore di marca e un rosa acceso per fermare lo scroll. Il resto è chiaro e scuro, puliti. Cinque colori, nessuna eccezione.</p>
+      </div>
+      <div class="palette">
+        <div class="sw" style="background:var(--vino)"><div><div class="n">Vino</div><div class="r">Colore di marca. Fondo pieno dei post Pensieri, logo, chiusure.</div></div><div class="hex">#5B0E22 <button class="copy" data-hex="#5B0E22">copia</button></div></div>
+        <div class="sw" style="background:var(--rose);color:var(--vino)"><div><div class="n">Rosé</div><div class="r">Colore pop. Lo sapevi?, sticker, parole evidenziate.</div></div><div class="hex">#F7B9C4 <button class="copy" data-hex="#F7B9C4">copia</button></div></div>
+        <div class="sw" style="background:var(--latte);color:var(--ink)"><div><div class="n">Latte</div><div class="r">Fondo chiaro delle schede, testo su scuro.</div></div><div class="hex">#F5EEE6 <button class="copy" data-hex="#F5EEE6">copia</button></div></div>
+        <div class="sw" style="background:var(--ink);border:1px solid var(--line-d)"><div><div class="n">Inchiostro</div><div class="r">Testo su chiaro, fondo delle foto.</div></div><div class="hex">#150A0D <button class="copy" data-hex="#150A0D">copia</button></div></div>
+        <div class="sw" style="background:var(--fumo);color:var(--ink)"><div><div class="n">Fumo</div><div class="r">Solo testo secondario su scuro.</div></div><div class="hex">#A18E92 <button class="copy" data-hex="#A18E92">copia</button></div></div>
+      </div>
+      <div class="combos">
+        <div class="combo" style="background:var(--vino);color:var(--latte)"><b>Aa <em style="color:var(--rose)">aa</em></b><small>latte + rosé su vino · 11,9:1</small></div>
+        <div class="combo" style="background:var(--rose);color:var(--vino)"><b>Aa</b><small>vino su rosé · 8,3:1</small></div>
+        <div class="combo" style="background:var(--latte);color:var(--ink)"><b>Aa <em style="color:var(--vino)">aa</em></b><small>inchiostro + vino su latte · 16,9:1</small></div>
+        <div class="combo" style="background:var(--ink);color:var(--latte);border:1px solid var(--line-d)"><b>Aa <em style="color:var(--rose)">aa</em></b><small>latte + rosé su inchiostro · 16,9:1</small></div>
+      </div>
+      <p class="note muted">Rosé non si usa mai come testo su Latte e Vino non si usa mai su Inchiostro: il contrasto non regge.</p>
+    </div>
+  </section>
+
+  <!-- Tipografia -->
+  <section class="band-latte">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill">Tipografia</span><h2>Sans deciso,<br><em>un tocco di corsivo</em></h2></div>
+        <p class="muted">Titoli in un grotesk moderno, grande e compatto, come le copertine dei magazine di oggi. Il serif compare solo in una parola in corsivo per titolo: è la nostra firma. Per i testi, un sans pulito.</p>
+      </div>
+      <div class="type">
+        <div class="spec" style="background:var(--vino);color:var(--latte)">
+          <div class="meta"><span class="pill" style="color:var(--latte)">Bricolage Grotesque 600–700</span><span class="pill" style="color:var(--rose)">+ Instrument Serif Italic</span></div>
+          <div class="demo-d">Bevi<br><em>meglio,</em><br>non di più.</div>
+        </div>
+        <div class="spec" style="background:var(--ink);color:var(--latte)">
+          <div class="meta"><span class="pill" style="color:var(--latte)">Geist</span><span class="pill" style="color:var(--latte)">400 · 500 · 600</span></div>
+          <p class="demo-t">Il Nebbiolo nasce nelle Langhe, matura lentamente e regala vini da aspettare. Servilo a 16–18 °C.</p>
+          <p class="mono" style="color:var(--rose);font-size:15px">Geist Mono · 16–18 °C · 13,5% vol</p>
+        </div>
+      </div>
+      <div class="scale-wrap" style="border-color:rgba(21,10,13,.15)">
+        <table class="scale">
+          <thead><tr><th style="color:#6E5D61;border-color:rgba(21,10,13,.15)">Ruolo sul canvas 1080×1350</th><th style="color:#6E5D61;border-color:rgba(21,10,13,.15)">Font</th><th style="color:#6E5D61;border-color:rgba(21,10,13,.15)">Dimensione</th><th style="color:#6E5D61;border-color:rgba(21,10,13,.15)">Interlinea · tracking</th></tr></thead>
+          <tbody>
+            <tr><td>Numero gigante</td><td>Bricolage Grotesque 700</td><td class="n">380–440 px</td><td class="n">0,8 · −6%</td></tr>
+            <tr><td>Hook / frase</td><td>Bricolage Grotesque 600 + una parola in Instrument Serif Italic</td><td class="n">100–120 px</td><td class="n">0,95 · −4,5%</td></tr>
+            <tr><td>Titolo slide</td><td>Bricolage Grotesque 600</td><td class="n">76–90 px</td><td class="n">1 · −4%</td></tr>
+            <tr><td>Testo</td><td>Geist 400</td><td class="n">40–44 px</td><td class="n">1,3 · 0</td></tr>
+            <tr><td>Pill e chip</td><td>Geist 500</td><td class="n">28–32 px</td><td class="n">1 · 0</td></tr>
+            <tr><td>Dati</td><td>Geist Mono, maiuscolo</td><td class="n">24–26 px</td><td class="n">1,2 · +4%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Logo</span><h2>wine <em>life</em></h2></div>
+        <p class="muted">Tutto minuscolo: "wine" nel grotesk in grassetto, "life" nel corsivo serif. Niente simboli: il nome basta. Per la foto profilo, il monogramma <em>wl</em> su un cerchio rosé, che si riconosce anche a 40 pixel.</p>
+      </div>
+      <div class="logos">
+        <div class="logo" style="background:var(--vino)"><div class="stage"><span class="wm">wine <em>life</em></span></div><span class="cap">Wordmark · latte e rosé su vino</span></div>
+        <div class="logo" style="background:#22141A"><div class="stage"><span class="avatar" style="background:var(--rose);color:var(--vino)">wl</span></div><span class="cap">Foto profilo</span></div>
+        <div class="logo" style="background:var(--latte);color:var(--ink)"><div class="stage"><span class="wm" style="font-size:56px">wine <em style="color:var(--vino)">life</em></span></div><span class="cap">Versione su chiaro</span></div>
+      </div>
+      <div class="rules-inline">
+        <span class="pill" style="color:var(--latte)">Sempre minuscolo</span>
+        <span class="pill" style="color:var(--latte)">"life" sempre in corsivo serif</span>
+        <span class="pill" style="color:var(--latte)">Spazio libero = altezza della w</span>
+        <span class="pill" style="color:var(--latte)">Min 160 px sul canvas</span>
+        <span class="pill" style="color:var(--fumo)">× ombre, contorni, calici disegnati</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elementi -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Elementi grafici</span><h2>Il linguaggio<br><em>di Instagram</em></h2></div>
+        <p class="muted">Segni che chi scorre riconosce al volo: pill, sticker, barre di avanzamento, frecce. Pochi, ripetuti su ogni post.</p>
+      </div>
+      <div class="elements">
+        <div class="el"><div class="stage"><span class="pill" style="color:var(--latte);font-size:14px">Lo sapevi?</span><span class="pill fill" style="font-size:14px">30 secondi</span></div><div class="cap"><b>Pill della rubrica</b>In alto a sinistra su ogni post. Bordo sottile o pieno rosé.</div></div>
+        <div class="el"><div class="stage"><span class="sticker" style="width:110px;height:110px;font-size:24px">salva<br>per dopo</span></div><div class="cap"><b>Sticker rotondo</b>Ruotato di −10°, uno per post al massimo. Spinge a salvare o condividere.</div></div>
+        <div class="el"><div class="stage"><div class="bars"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div><div class="cap"><b>Barra del carosello</b>Come nelle storie: dice quante slide mancano e invita a scorrere.</div></div>
+        <div class="el"><div class="stage"><span style="font-family:var(--f-display);font-weight:600;font-size:38px;letter-spacing:-.04em">un <span class="hl">calice</span> e via</span></div><div class="cap"><b>Evidenziatore rosé</b>Sottolinea una sola parola chiave nei testi lunghi.</div></div>
+        <div class="el"><div class="stage"><span class="arrow">→</span></div><div class="cap"><b>Freccia</b>In basso a destra sulle copertine dei caroselli.</div></div>
+        <div class="el"><div class="stage"><span style="font-family:var(--f-display);font-weight:700;font-size:110px;line-height:.8;letter-spacing:-.06em;color:var(--rose)">16°</span></div><div class="cap"><b>Numero gigante</b>Un solo dato, enorme. È quello che si nota nel feed.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rubriche -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Rubriche</span><h2>Quattro rubriche,<br><em>quattro colori</em></h2></div>
+        <p class="muted">Ogni rubrica ha il suo fondo, così il feed diventa una scacchiera riconoscibile. Anteprime in proporzione reale 1080×1350.</p>
+      </div>
+      <div class="rubrics">
+        <div class="rubric">
+          <div class="post grain" style="background:var(--vino);color:var(--latte)">
+            <div class="in">
+              <div class="top"><span class="ptag">Un calice di pensieri</span></div>
+              <p class="d" style="font-size:11.5cqw;margin-block:auto">Certe bottiglie si aprono per festeggiare. Altre, per <em style="color:var(--rose)">ricordare.</em></p>
+              <div class="bot"><span class="handle">@winelife</span><span class="handle">manda a chi ↗</span></div>
+            </div>
+          </div>
+          <div class="meta"><span class="pill">Wine Thoughts · 40%</span><h3>Un calice di pensieri</h3><p>Fondo Vino, frase enorme con una parola rosé in corsivo. Obiettivo: condivisioni.</p></div>
+        </div>
+        <div class="rubric">
+          <div class="post grain" style="background:var(--rose);color:var(--vino)">
+            <div class="in">
+              <div class="top"><span class="ptag">Lo sapevi?</span></div>
+              <div class="d" style="font-size:44cqw;line-height:.78;letter-spacing:-.05em;margin-top:auto">600</div>
+              <p class="t" style="color:var(--ink);margin-top:3cqw;max-width:70cqw">acini d'uva, più o meno, per riempire una sola bottiglia di vino.</p>
+              <div class="bot" style="margin-top:5cqw"><span class="handle" style="color:var(--ink)">@winelife</span></div>
+            </div>
+            <div class="stk" style="width:22cqw;height:22cqw;right:7cqw;top:16cqw;background:var(--vino);color:var(--rose);font-size:5cqw">salva<br>per dopo</div>
+          </div>
+          <div class="meta"><span class="pill">Wine Facts · 25%</span><h3>Lo sapevi?</h3><p>Fondo Rosé, un numero gigante, una riga di spiegazione. Obiettivo: salvataggi.</p></div>
+        </div>
+        <div class="rubric">
+          <div class="post grain" style="background:var(--latte);color:var(--ink)">
+            <div class="in">
+              <div class="top"><span class="ptag" style="background:var(--vino);color:var(--latte);border-color:var(--vino)">Vino in 30 secondi</span><span class="handle" style="font-family:var(--f-mono)">0:30</span></div>
+              <p class="d" style="font-size:17cqw;margin-top:6cqw">Nebbiolo</p>
+              <p class="t" style="font-family:var(--f-accent);font-style:italic;font-size:6cqw;color:var(--vino);margin-top:1cqw">il re delle Langhe</p>
+              <div class="tiles">
+                <div class="tile" style="background:#EBE1D6"><span>Dove</span><b>Piemonte</b></div>
+                <div class="tile" style="background:#EBE1D6"><span>Sa di</span><b>Rosa, ciliegia</b></div>
+                <div class="tile" style="background:#EBE1D6"><span>Servilo</span><b>16–18 °C</b></div>
+                <div class="tile" style="background:var(--vino);color:var(--latte)"><span>Con</span><b>Brasato, tartufo</b></div>
+              </div>
+              <div class="bot" style="margin-top:4cqw"><span class="handle">@winelife</span><span class="handle" style="font-family:var(--f-mono)">2/5</span></div>
+            </div>
+          </div>
+          <div class="meta"><span class="pill">Wine Focus · 20%</span><h3>Vino in 30 secondi</h3><p>Fondo Latte, nome enorme, quattro riquadri con i dati essenziali. Obiettivo: autorevolezza.</p></div>
+        </div>
+        <div class="rubric">
+          <div class="post flash grain" style="color:var(--latte)">
+            <div class="table"></div>
+            <svg class="glass" viewBox="0 0 100 200" aria-hidden="true"><use href="#glass"/></svg>
+            <div class="shade"></div>
+            <div class="in">
+              <div class="top"><span class="ptag" style="color:var(--rose)">Wine Life consiglia</span></div>
+              <p class="d" style="font-size:10.5cqw;margin-top:5cqw">Cosa bere a una cena <em style="color:var(--rose)">a due</em></p>
+              <div class="bot"><div class="chips"><span class="chip">Pinot Nero</span><span class="chip">14–16 °C</span><span class="chip">luci basse</span></div></div>
+            </div>
+          </div>
+          <div class="meta"><span class="pill">Wine Moments · 15%</span><h3>Wine Life consiglia</h3><p>Foto con flash, titolo grande in alto, chip in basso. Obiettivo: salvataggi e identificazione.</p></div>
+        </div>
+      </div>
+
+      <div class="carousel" aria-label="Esempio di carosello Wine Life consiglia">
+        <div class="post flash grain" style="color:var(--latte)"><div class="bars"><i class="on" style="background:var(--latte)"></i><i></i><i></i><i></i><i></i></div><div class="table"></div><svg class="glass" viewBox="0 0 100 200" aria-hidden="true" style="width:30%;left:50%"><use href="#glass"/></svg><div class="shade"></div><div class="in"><div class="top"><span class="ptag" style="color:var(--rose)">Consiglia</span></div><p class="d" style="font-size:12cqw;margin-top:5cqw">Smetti di ordinare <em style="color:var(--rose)">sempre</em> il Prosecco.</p><div class="bot"><span class="handle">@winelife</span><span class="arrowb" style="background:var(--latte);color:var(--vino)">→</span></div></div></div>
+        <div class="post grain" style="background:var(--latte);color:var(--ink)"><div class="bars"><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i style="background:rgba(21,10,13,.15)"></i><i style="background:rgba(21,10,13,.15)"></i><i style="background:rgba(21,10,13,.15)"></i></div><div class="in"><div class="top"><span class="ptag" style="color:var(--vino)">Alternativa 1</span></div><p class="d" style="font-size:15cqw;margin-top:auto">Franciacorta</p><p class="t" style="margin-top:3cqw">Più fine, bollicine piccole. Per quando vuoi fare bella figura.</p><div class="bot" style="margin-top:5cqw"><span class="handle">@winelife</span></div></div></div>
+        <div class="post grain" style="background:var(--latte);color:var(--ink)"><div class="bars"><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i style="background:rgba(21,10,13,.15)"></i><i style="background:rgba(21,10,13,.15)"></i></div><div class="in"><div class="top"><span class="ptag" style="color:var(--vino)">Alternativa 2</span></div><p class="d" style="font-size:15cqw;margin-top:auto">Trento Doc</p><p class="t" style="margin-top:3cqw">Bollicine di montagna, fresche e dritte. Perfetto all'aperitivo.</p><div class="bot" style="margin-top:5cqw"><span class="handle">@winelife</span></div></div></div>
+        <div class="post grain" style="background:var(--latte);color:var(--ink)"><div class="bars"><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i class="on" style="background:var(--vino)"></i><i style="background:rgba(21,10,13,.15)"></i></div><div class="in"><div class="top"><span class="ptag" style="color:var(--vino)">Alternativa 3</span></div><p class="d" style="font-size:15cqw;margin-top:auto">Lambrusco <em style="color:var(--vino)">secco</em></p><p class="t" style="margin-top:3cqw">Rosso, frizzante, sorprende sempre. Con pizza e salumi.</p><div class="bot" style="margin-top:5cqw"><span class="handle">@winelife</span></div></div></div>
+        <div class="post grain" style="background:var(--vino);color:var(--latte)"><div class="bars"><i class="on" style="background:var(--latte)"></i><i class="on" style="background:var(--latte)"></i><i class="on" style="background:var(--latte)"></i><i class="on" style="background:var(--latte)"></i><i class="on" style="background:var(--latte)"></i></div><div class="in"><p class="d" style="font-size:13cqw;margin-top:auto">Salvalo.<br>Ti servirà <em style="color:var(--rose)">venerdì.</em></p><div class="bot" style="margin-top:8cqw"><span class="d" style="font-size:7cqw">wine <em style="color:var(--rose)">life</em></span><span class="handle">segui per altri →</span></div></div></div>
+      </div>
+      <p class="cap-row">Carosello tipo: copertina con foto e hook, tre slide chiare con un'idea ciascuna, chiusura su Vino con invito a salvare e seguire. I vini indicati sono esempi di layout: i contenuti veri li scriviamo e verifichiamo nei prossimi passi.</p>
+    </div>
+  </section>
+
+  <!-- Layout -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Layout</span><h2>La griglia<br><em>1080×1350</em></h2></div>
+        <p class="muted">Formato 4:5 verticale, quello che occupa più schermo nel feed. Instagram ritaglia l'anteprima del profilo in 3:4, quindi i lati perdono circa 34 px.</p>
+      </div>
+      <div class="layout">
+        <div class="gd" role="img" aria-label="Schema della griglia del post">
+          <div class="crop"></div><div class="safe"></div>
+          <div class="z z1">pill rubrica</div><div class="z z2">hook / contenuto</div><div class="z z3">@handle · freccia</div>
+          <span class="dim" style="top:2.4cqw;left:7.6cqw">80 px</span><span class="dim" style="bottom:2.2cqw;right:7.6cqw">1080 × 1350</span>
+        </div>
+        <dl class="specs">
+          <div><dt>Margini</dt><dd>80 px su tutti i lati. Copre il ritaglio 3:4 del profilo (tratteggio rosé).</dd></div>
+          <div><dt>Gerarchia</dt><dd>Una cosa enorme per post: una frase, un numero o un nome. Tutto il resto è piccolo.</dd></div>
+          <div><dt>Allineamento</dt><dd>A sinistra. Il centrato fa subito "template di Canva".</dd></div>
+          <div><dt>Parole</dt><dd>Hook massimo 10 parole. Testo massimo 25 parole per slide.</dd></div>
+          <div><dt>Zone fisse</dt><dd>Pill in alto a sinistra, @handle in basso a sinistra, freccia o contatore in basso a destra.</dd></div>
+          <div><dt>Caroselli</dt><dd>5 slide: hook su foto, tre slide con un'idea ciascuna, chiusura su Vino con invito a salvare.</dd></div>
+          <div><dt>Esportazione</dt><dd>PNG 1080×1350, sRGB.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profilo -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Feed</span><h2>Come appare<br><em>il profilo</em></h2></div>
+        <p class="muted">Chi arriva sul profilo decide in tre secondi se seguire. La griglia deve sembrare un magazine: colori alternati, una foto ogni due grafiche, mai due fondi uguali vicini.</p>
+      </div>
+      <div class="profile-wrap">
+        <div class="phone" role="img" aria-label="Anteprima del profilo Instagram Wine Life">
+          <div class="ph-head"><span class="ph-av">wl</span><div class="ph-stats"><div><b>10</b>post</div><div><b>—</b>follower</div><div><b>—</b>seguiti</div></div></div>
+          <div class="ph-bio"><b>Wine Life</b><br>Il vino come stile di vita 🍷<br>Cosa bere, cosa regalare, cosa sapere.<br>Senza fare i sommelier.</div>
+          <div class="ph-hl">
+            <div><span style="background:var(--vino)">“</span>Pensieri</div>
+            <div><span style="background:var(--rose);color:var(--vino)">?</span>Lo sapevi</div>
+            <div><span style="background:var(--latte);color:var(--ink)">30</span>Vini</div>
+            <div><span style="background:#3a0a16">→</span>Consigli</div>
+          </div>
+          <div class="ph-grid">
+            <div class="c" style="background:var(--vino)"><b style="font-size:19px">Bevi <em style="color:var(--rose)">meglio</em></b></div>
+            <div class="c" style="background:var(--latte);color:var(--ink)"><b style="font-size:24px">Etna</b></div>
+            <div class="c flash"><div class="table"></div><svg class="glass" viewBox="0 0 100 200" aria-hidden="true" style="left:30%"><use href="#glass"/></svg></div>
+            <div class="c" style="background:var(--rose);color:var(--vino)"><b style="font-size:52px">16°</b></div>
+            <div class="c flash"><div class="table"></div><svg class="glass" viewBox="0 0 100 200" aria-hidden="true" style="left:30%"><use href="#glass"/></svg></div>
+            <div class="c" style="background:var(--vino)"><b style="font-size:17px">Un calice, <em style="color:var(--rose)">una storia</em></b></div>
+            <div class="c flash"><div class="table"></div><svg class="glass" viewBox="0 0 100 200" aria-hidden="true" style="left:30%"><use href="#glass"/></svg></div>
+            <div class="c" style="background:var(--vino)"><b style="font-size:19px">Il vino <em style="color:var(--rose)">aspetta</em></b></div>
+            <div class="c" style="background:var(--latte);color:var(--ink)"><b style="font-size:20px">Nebbiolo</b></div>
+          </div>
+        </div>
+        <ul class="feed-rules">
+          <li><span><b>Mai due fondi uguali vicini</b>, né in orizzontale né in verticale.</span></li>
+          <li><span><b>Una foto ogni due grafiche.</b> Danno respiro e rendono il profilo "vero".</span></li>
+          <li><span><b>L'hook si legge in miniatura.</b> Se non si legge nella griglia, è troppo lungo.</span></li>
+          <li><span><b>Una parola in corsivo serif per titolo</b>, al massimo. Tutto il resto è sans. È la firma di Wine Life.</span></li>
+          <li><span><b>Stesso preset su ogni foto</b>: flash, contrasto alto, rossi pieni, grana.</span></li>
+          <li><span><b>Niente emoji nelle grafiche.</b> In caption, al massimo una.</span></li>
+          <li><span><b>Copertine dei Reel</b> nello stesso stile dei post, così la griglia resta pulita.</span></li>
+          <li><span><b>Prima di pubblicare</b>, guarda il post accanto agli ultimi sei. Se stona, cambia fondo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Moodboard -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="left"><span class="pill" style="color:var(--rose)">Moodboard</span><h2>Foto con<br><em>il flash acceso</em></h2></div>
+        <p class="muted">L'estetica dei wine bar di oggi: flash diretto, ombre nette, rossi pieni, tavoli veri e un po' disordinati. Mani sì, volti mai.</p>
+      </div>
+      <div class="mood">
+        <div class="scene" style="background:var(--vino)"><span class="mono">01 · Il versare</span><h3>Flash su un calice <em>pieno a metà</em></h3><p>Il getto del vino congelato dal flash, fondo scuro, riflessi bianchi netti sul vetro.</p></div>
+        <div class="scene" style="background:var(--rose);color:var(--vino)"><span class="mono">02 · Il set colorato</span><h3>Bottiglia su <em>fondo rosa</em></h3><p>Carta colorata o velluto bordeaux dietro, ombra dura del flash. Stile still life da rivista.</p></div>
+        <div class="scene" style="background:var(--latte);color:var(--ink)"><span class="mono">03 · Dopo cena</span><h3>Tavola <em>vissuta</em> dall'alto</h3><p>Calici a metà, briciole, tovaglia a quadretti, una mano con un anello che prende il bicchiere.</p></div>
+        <div class="scene" style="background:#22141A"><span class="mono">04 · Il bar</span><h3>Bancone di un <em>wine bar</em></h3><p>Luci al neon caldo sfocate, bottiglie in fila, una mano che indica la lista dei vini.</p></div>
+        <div class="scene" style="background:#22141A"><span class="mono">05 · Il dettaglio</span><h3>Macro su <em>tappo e etichetta</em></h3><p>Sughero macchiato, capsula strappata, lacrime sul vetro. Molto vicino, molto nitido.</p></div>
+        <div class="scene" style="background:#22141A"><span class="mono">06 · Il brindisi</span><h3>Quattro calici che <em>si toccano</em></h3><p>Dall'alto o dal basso, flash, movimento leggero. Gioia senza facce.</p></div>
+      </div>
+      <div class="words" aria-label="Parole chiave">
+        <span>flash diretto</span><span>ombre nette</span><span>rossi pieni</span><span>grana</span><span>still life</span><span>tavola vissuta</span><span>mani con anelli</span><span>vetro lucido</span><span>wine bar</span><span>fondi colorati</span><span>dall'alto</span><span>macro</span>
+      </div>
+      <div class="grade">
+        <div><b>Contrasto</b>Alto, neri profondi ma non chiusi.</div>
+        <div><b>Colori</b>Rossi saturi, bianchi puliti, mai gialli.</div>
+        <div><b>Grana</b>Media, effetto pellicola, su ogni foto.</div>
+        <div><b>Dove trovarle</b>Unsplash e Pexels: "wine flash photography", "natural wine bar", "wine still life".</div>
+      </div>
+      <p class="note muted">Prompt per immagini AI: <span class="mono" style="color:var(--rose)">direct flash photography, wine glass, deep red, high contrast, film grain, editorial still life, no faces, 4:5</span></p>
+    </div>
+  </section>
+</main>
+
+<div class="wrap"><footer><span>wine life · brand kit v3</span><span>Prossimo passo: template per le quattro rubriche</span></footer></div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var hex=b.getAttribute('data-hex');
+    var done=function(){b.textContent='copiato';setTimeout(function(){b.textContent='copia'},1400)};
+    try{navigator.clipboard.writeText(hex).then(done,function(){b.textContent=hex})}catch(e){b.textContent=hex}
+  });
+});
+</script>
