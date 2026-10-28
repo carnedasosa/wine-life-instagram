@@ -108,6 +108,8 @@ Configurazione (tutto fatto il 28/10/2026):
 
 Il cron gira ai minuti 7 e 37 di ogni ora (spostato dal 30/0 il 28/10 perché a quell'ora non partiva). Se un post non esce, il giro a mano senza input è sicuro: `gh workflow run pubblica.yml -R carnedasosa/wine-life-instagram` pubblica solo l'eventuale post già scaduto.
 
+Il cron di GitHub non è mai partito da solo (28/10): il primo post `23-mercoledi` è uscito alle 18:32 con un giro a mano. Per riserva c'è l'attività di Windows **"Wine Life - pubblica post"** (creata il 28/10 con l'ok di Alessio): ogni giorno alle 13:15, 18:45 e 19:15 lancia il giro senza input; se il PC era spento parte appena si riaccende. Per toglierla: `Unregister-ScheduledTask -TaskName "Wine Life - pubblica post"`.
+
 **Token:** generato il 28/10/2026, dura 60 giorni (scade verso il 27/12/2026). Rinnovalo entro il **17/12/2026**: rigenera il token dalla dashboard Meta (punto 2) e rilancia `python pubblicazione/imposta_token.py`. In alternativa `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN`, poi di nuovo lo script.
 
 Alternativa senza configurazione: programmare i post dall'app Instagram (Impostazioni avanzate → Programma) usando `pubblicazione/jpg/` e `caption.md`.
