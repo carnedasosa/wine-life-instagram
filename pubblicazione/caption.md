@@ -18,6 +18,7 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 | 12 | lun 02/11 ore 18:30 | Un calice di pensieri | 1 |
 | 13 | mer 04/11 ore 18:30 | Un calice di pensieri | 1 |
 | 14 | ven 06/11 ore 13:00 | Lo sapevi? | 1 |
+| 15 | dom 08/11 ore 18:30 | Wine Life consiglia | 1 |
 
 ## 01-certe-bottiglie · sab 31/10 ore 18:30
 
@@ -225,4 +226,18 @@ Il colore del vino rosso viene dalla buccia: il mosto resta a contatto con le bu
 Salvalo e raccontalo alla prossima cena.
 
 #losapevi #curiositàsulvino #vinorosso #vinoitaliano #winelife
+```
+
+## 15-cena-da-amici · dom 08/11 ore 18:30
+
+Immagini: `15-cena-da-amici-post.jpg`
+
+```
+Cosa portare a cena da amici? Una Barbera d'Asti.
+
+È fresca, morbida, poco impegnativa: va d'accordo con la pasta al ragù, la pizza, i salumi e anche con chi "di vino non capisce niente". Servila a 16–18 °C.
+
+Mandalo a chi ti ha invitato a cena questo weekend.
+
+#barbera #cenatraamici #cosaportare #vinoitaliano #winelife
 ```
