@@ -1,6 +1,6 @@
 # Wine Life · istruzioni per Claude Code
 
-Pagina Instagram **faceless** "Wine Life" (handle provvisorio `@winelife`). Il proprietario è Alessio: scrivigli sempre in italiano, in modo semplice e diretto. Tutto il materiale (brand kit, template, primi 10 post, sistema di pubblicazione) è in questa cartella.
+Pagina Instagram **faceless** "Wine Life" (handle `@winee.life`). Il proprietario è Alessio: scrivigli sempre in italiano, in modo semplice e diretto. Tutto il materiale (brand kit, template, primi 10 post, sistema di pubblicazione) è in questa cartella.
 
 Prima di creare o modificare contenuti leggi `brand-kit/brand-kit.md` (regole) e `brand-kit/tokens.json` (valori esatti). Se una richiesta va contro il brand kit, fallo notare prima di procedere.
 
