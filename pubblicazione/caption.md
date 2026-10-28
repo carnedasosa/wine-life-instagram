@@ -16,6 +16,8 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 | 10 | sab 21/11 ore 18:30 | Un calice di pensieri | 1 |
 | 11 | dom 01/11 ore 18:30 | Vino in 30 secondi | 5 |
 | 12 | lun 02/11 ore 18:30 | Un calice di pensieri | 1 |
+| 13 | mer 04/11 ore 18:30 | Un calice di pensieri | 1 |
+| 14 | ven 06/11 ore 13:00 | Lo sapevi? | 1 |
 
 ## 01-certe-bottiglie · sab 31/10 ore 18:30
 
@@ -195,4 +197,32 @@ Un calice in più sulla tavola, un nome detto piano. Il vino sa tenere compagnia
 Mandalo a chi stasera ha qualcuno da ricordare.
 
 #calicedivino #ricordi #vinoitaliano #momenti #winelife
+```
+
+## 13-a-tavola · mer 04/11 ore 18:30
+
+Immagini: `13-a-tavola-post.jpg`
+
+```
+Il tempo migliore è quello che perdi a tavola.
+
+Il secondo bicchiere, il dolce che nessuno voleva, i discorsi che iniziano dopo il caffè. Nessuno guarda l'orologio, ed è proprio questo il punto.
+
+Manda questo post a chi non si alza mai per primo da tavola.
+
+#vino #tavola #vinoitaliano #calicedivino #winelife
+```
+
+## 14-colore-buccia · ven 06/11 ore 13:00
+
+Immagini: `14-colore-buccia-post.jpg`
+
+```
+Il succo dell'uva rossa è quasi incolore.
+
+Il colore del vino rosso viene dalla buccia: il mosto resta a contatto con le bucce e si tinge piano piano. Per questo con uve rosse si può fare anche un vino bianco o un rosato.
+
+Salvalo e raccontalo alla prossima cena.
+
+#losapevi #curiositàsulvino #vinorosso #vinoitaliano #winelife
 ```
