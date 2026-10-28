@@ -13,6 +13,7 @@ Esempi:
   python3 publish.py --dry-run --due     # mostra cosa uscirebbe adesso, senza toccare Instagram
   python3 publish.py --due               # pubblica i post arrivati alla loro ora e non ancora usciti
   python3 publish.py --post 01-certe-bottiglie   # pubblica subito un post preciso
+  python3 publish.py --check --post 23-mercoledi # prepara il post su Instagram ma NON lo pubblica
 """
 import argparse
 import json
@@ -59,7 +60,7 @@ def wait_ready(container_id):
     sys.exit(f"Container {container_id} non pronto dopo 150 secondi")
 
 
-def publish(post, dry_run):
+def publish(post, dry_run, check=False):
     user = os.environ.get("IG_USER_ID", "<IG_USER_ID>")
     base = os.environ.get("IMAGE_BASE_URL", "<IMAGE_BASE_URL>").rstrip("/")
     urls = [f"{base}/{name}" for name in post["immagini"]]
@@ -82,6 +83,10 @@ def publish(post, dry_run):
         container = call("POST", f"{user}/media", media_type="CAROUSEL",
                          children=",".join(children), caption=post["caption"])["id"]
     wait_ready(container)
+    if check:
+        # Instagram ha scaricato e accettato le immagini: senza media_publish il container scade da solo.
+        print(f"   verifica ok: container {container} pronto, NON pubblicato")
+        return None
     media_id = call("POST", f"{user}/media_publish", creation_id=container)["id"]
     print(f"   pubblicato, media id {media_id}")
     return media_id
@@ -92,9 +97,12 @@ def main():
     p.add_argument("--due", action="store_true", help="pubblica i post la cui ora è passata")
     p.add_argument("--post", help="pubblica subito il post con questo id")
     p.add_argument("--dry-run", action="store_true", help="non chiama Instagram")
+    p.add_argument("--check", action="store_true", help="con --post: prepara il post su Instagram senza pubblicarlo")
     args = p.parse_args()
     if not (args.due or args.post):
         p.error("serve --due oppure --post ID")
+    if args.check and not args.post:
+        p.error("--check va usato con --post ID")
 
     cal = json.loads(CALENDARIO.read_text(encoding="utf-8"))
     tz = ZoneInfo(cal["fuso_orario"])
@@ -124,7 +132,7 @@ def main():
     for post in todo:
         if post["id"] in done and not args.post:
             continue
-        media_id = publish(post, args.dry_run)
+        media_id = publish(post, args.dry_run, args.check)
         if media_id:
             done[post["id"]] = {"media_id": media_id, "pubblicato": datetime.now(tz).isoformat(timespec="minutes")}
             STATO.write_text(json.dumps(done, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

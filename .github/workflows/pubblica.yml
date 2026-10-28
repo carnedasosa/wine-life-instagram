@@ -8,6 +8,10 @@ on:
       post:
         description: "id del post da pubblicare subito (vuoto = segui il calendario)"
         required: false
+      verifica:
+        description: "solo verifica: prepara il post su Instagram ma non lo pubblica (serve anche post)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,8 +33,11 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/pubblicazione/jpg
           POST_ID: ${{ inputs.post }}
+          VERIFICA: ${{ inputs.verifica }}
         run: |
-          if [ -n "$POST_ID" ]; then python3 publish.py --post "$POST_ID"; else python3 publish.py --due; fi
+          if [ "$VERIFICA" = "true" ]; then python3 publish.py --check --post "$POST_ID"
+          elif [ -n "$POST_ID" ]; then python3 publish.py --post "$POST_ID"
+          else python3 publish.py --due; fi
       - name: Salva lo stato
         run: |
           git config user.name "wine-life-bot"
