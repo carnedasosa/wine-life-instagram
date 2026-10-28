@@ -79,22 +79,22 @@ Su Windows lo script trova da solo Chrome o Edge; altrimenti `CHROME="/percorso/
 
 | # | Quando | Rubrica | Slide |
 |---|---|---|---|
-| 01 certe-bottiglie | sab 31/10/2026 21:00 | Un calice di pensieri | 1 |
+| 01 certe-bottiglie | sab 31/10/2026 18:30 | Un calice di pensieri | 1 |
 | 02 temperatura | mar 03/11 18:00 | Lo sapevi? | 5 |
 | 03 oltre-il-prosecco | gio 05/11 18:30 | Wine Life consiglia | 5 |
 | 04 nebbiolo | sab 07/11 18:30 | Vino in 30 secondi | 5 |
-| 05 con-chi-resta | mar 10/11 21:00 | Un calice di pensieri | 1 |
+| 05 con-chi-resta | mar 10/11 19:00 | Un calice di pensieri | 1 |
 | 06 600-acini | gio 12/11 13:00 | Lo sapevi? | 1 |
-| 07 un-viaggio | sab 14/11 21:00 | Un calice di pensieri | 1 |
+| 07 un-viaggio | sab 14/11 18:30 | Un calice di pensieri | 1 |
 | 08 cena-a-due | mar 17/11 19:00 | Wine Life consiglia | 1 |
 | 09 vermentino | gio 19/11 18:30 | Vino in 30 secondi | 5 |
-| 10 il-momento-giusto | sab 21/11 21:00 | Un calice di pensieri | 1 |
+| 10 il-momento-giusto | sab 21/11 18:30 | Un calice di pensieri | 1 |
 
 Dal 22/11 in poi il calendario è vuoto: i prossimi post sono da creare.
 
 ## Pubblicazione automatica: stato al 28/10/2026
 
-**Niente è ancora stato pubblicato.** Il sistema è configurato e pronto: il primo post (`01-certe-bottiglie`) esce da solo sabato 31/10 alle 21:00.
+**Niente è ancora stato pubblicato.** Il sistema è configurato e pronto: il primo post (`01-certe-bottiglie`) esce da solo sabato 31/10 alle 18:30.
 
 Come funziona: GitHub Actions (`.github/workflows/pubblica.yml`) ogni 30 minuti lancia `pubblicazione/publish.py --due`, che pubblica con la Instagram API (login Instagram, `graph.instagram.com` v23.0) i post arrivati alla loro ora. Le immagini vengono prese da `raw.githubusercontent.com/<utente>/<repo>/<branch>/pubblicazione/jpg/`, per questo **il repository deve essere pubblico**. Lo script scrive `pubblicazione/pubblicati.json` e lo committa, così nessun post esce due volte (per questo, prima di lavorare in locale, fai `git pull`). Esce al massimo un post per giro. Il cron di GitHub può partire anche 10–30 minuti in ritardo.
 

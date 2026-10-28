@@ -4,18 +4,18 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 
 | # | Quando | Rubrica | Slide |
 |---|---|---|---|
-| 01 | sab 31/10 ore 21:00 | Un calice di pensieri | 1 |
+| 01 | sab 31/10 ore 18:30 | Un calice di pensieri | 1 |
 | 02 | mar 03/11 ore 18:00 | Lo sapevi? | 5 |
 | 03 | gio 05/11 ore 18:30 | Wine Life consiglia | 5 |
 | 04 | sab 07/11 ore 18:30 | Vino in 30 secondi | 5 |
-| 05 | mar 10/11 ore 21:00 | Un calice di pensieri | 1 |
+| 05 | mar 10/11 ore 19:00 | Un calice di pensieri | 1 |
 | 06 | gio 12/11 ore 13:00 | Lo sapevi? | 1 |
-| 07 | sab 14/11 ore 21:00 | Un calice di pensieri | 1 |
+| 07 | sab 14/11 ore 18:30 | Un calice di pensieri | 1 |
 | 08 | mar 17/11 ore 19:00 | Wine Life consiglia | 1 |
 | 09 | gio 19/11 ore 18:30 | Vino in 30 secondi | 5 |
-| 10 | sab 21/11 ore 21:00 | Un calice di pensieri | 1 |
+| 10 | sab 21/11 ore 18:30 | Un calice di pensieri | 1 |
 
-## 01-certe-bottiglie · sab 31/10 ore 21:00
+## 01-certe-bottiglie · sab 31/10 ore 18:30
 
 Immagini: `01-certe-bottiglie-post.jpg`
 
@@ -81,7 +81,7 @@ Salvalo per la prossima volta che sei davanti allo scaffale.
 #nebbiolo #barolo #barbaresco #langhe #winelife
 ```
 
-## 05-con-chi-resta · mar 10/11 ore 21:00
+## 05-con-chi-resta · mar 10/11 ore 19:00
 
 Immagini: `05-con-chi-resta-post.jpg`
 
@@ -109,7 +109,7 @@ Salvalo e tiralo fuori alla prossima cena.
 #losapevi #curiositàsulvino #vendemmia #vinoitaliano #winelife
 ```
 
-## 07-un-viaggio · sab 14/11 ore 21:00
+## 07-un-viaggio · sab 14/11 ore 18:30
 
 Immagini: `07-un-viaggio-post.jpg`
 
@@ -151,7 +151,7 @@ Al prossimo aperitivo, ordinalo tu. Salvalo per non dimenticarlo.
 #vermentino #vinobianco #sardegna #liguria #winelife
 ```
 
-## 10-il-momento-giusto · sab 21/11 ore 21:00
+## 10-il-momento-giusto · sab 21/11 ore 18:30
 
 Immagini: `10-il-momento-giusto-post.jpg`
 
