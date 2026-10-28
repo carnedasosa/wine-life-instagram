@@ -90,7 +90,7 @@ Su Windows lo script trova da solo Chrome o Edge; altrimenti `CHROME="/percorso/
 | 09 vermentino | gio 19/11 18:30 | Vino in 30 secondi | 5 |
 | 10 il-momento-giusto | sab 21/11 18:30 | Un calice di pensieri | 1 |
 
-Dal 28/10 si pubblica ogni giorno. I post 11–22 (dal 1/11 al 20/11, uno per ogni giorno vuoto) sono già fatti e in calendario: l'elenco completo è in `pubblicazione/caption.md` e il piano in `~/.claude/instagram/plan.md`. Dal 22/11 il calendario è vuoto: i prossimi post si creano con `/nuovo-post`.
+Dal 28/10 si pubblica ogni giorno. I post 23–25 (28, 29 e 30/10) e 11–22 (dal 1/11 al 20/11, uno per ogni giorno vuoto) sono già fatti e in calendario, quindi il primo post in assoluto è `23-mercoledi` del 28/10 alle 18:30: l'elenco completo è in `pubblicazione/caption.md` e il piano in `~/.claude/instagram/plan.md`. Dal 22/11 il calendario è vuoto: i prossimi post si creano con `/nuovo-post`.
 
 ## Pubblicazione automatica: stato al 28/10/2026
 

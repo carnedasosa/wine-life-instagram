@@ -26,6 +26,9 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 | 20 | lun 16/11 ore 18:30 | Un calice di pensieri | 1 |
 | 21 | mer 18/11 ore 13:00 | Lo sapevi? | 1 |
 | 22 | ven 20/11 ore 18:30 | Wine Life consiglia | 1 |
+| 23 | mer 28/10 ore 18:30 | Wine Life consiglia | 1 |
+| 24 | gio 29/10 ore 13:00 | Lo sapevi? | 1 |
+| 25 | ven 30/10 ore 18:30 | Vino in 30 secondi | 5 |
 
 ## 01-certe-bottiglie · sab 31/10 ore 18:30
 
@@ -345,4 +348,46 @@ Una bollicina buona non è mai sbagliata: si apre per festeggiare, si tiene per 
 Mandalo a chi deve ancora fare un regalo.
 
 #regalidinatale #bollicine #metodoclassico #vinoitaliano #winelife
+```
+
+## 23-mercoledi · mer 28/10 ore 18:30
+
+Immagini: `23-mercoledi-post.jpg`
+
+```
+Cosa aprire un mercoledì qualunque? Un Bardolino.
+
+È il rosso leggero del Lago di Garda: fresco, fruttato, mai impegnativo. Sta bene con la pasta, la pizza e i salumi, e non ti chiede un'occasione. Servilo a 14–16 °C.
+
+Mandalo a chi stasera cucina per te.
+
+#bardolino #lagodigarda #cosabere #vinoitaliano #winelife
+```
+
+## 24-750 · gio 29/10 ore 13:00
+
+Immagini: `24-750-post.jpg`
+
+```
+In una bottiglia di vino ci sono 750 millilitri.
+
+Vuol dire 5 o 6 calici, se versi senza riempire il bicchiere fino all'orlo. Per una cena in quattro, una bottiglia basta per il primo giro: la seconda tienila pronta.
+
+Salvalo per la prossima spesa prima di una cena.
+
+#losapevi #curiositàsulvino #cena #vinoitaliano #winelife
+```
+
+## 25-primitivo · ven 30/10 ore 18:30
+
+Immagini: `25-primitivo-slide-1.jpg`, `25-primitivo-slide-2.jpg`, `25-primitivo-slide-3.jpg`, `25-primitivo-slide-4.jpg`, `25-primitivo-slide-5.jpg`
+
+```
+Primitivo, in 30 secondi: il sole della Puglia.
+
+Morbido e caldo, sa di prugna, mora e spezie. Si chiama così perché matura presto, ed è lo stesso vitigno dello Zinfandel californiano. Servilo a 16–18 °C con ragù, carne alla brace e formaggi stagionati.
+
+Salvalo per il prossimo sabato sera.
+
+#primitivo #puglia #salento #vinoitaliano #winelife
 ```

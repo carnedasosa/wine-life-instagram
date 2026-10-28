@@ -2,6 +2,37 @@
   "fuso_orario": "Europe/Rome",
   "post": [
     {
+      "id": "23-mercoledi",
+      "quando": "2026-10-28T18:30",
+      "rubrica": "Wine Life consiglia",
+      "immagini": [
+        "23-mercoledi-post.jpg"
+      ],
+      "caption": "Cosa aprire un mercoledì qualunque? Un Bardolino.\n\nÈ il rosso leggero del Lago di Garda: fresco, fruttato, mai impegnativo. Sta bene con la pasta, la pizza e i salumi, e non ti chiede un'occasione. Servilo a 14–16 °C.\n\nMandalo a chi stasera cucina per te.\n\n#bardolino #lagodigarda #cosabere #vinoitaliano #winelife"
+    },
+    {
+      "id": "24-750",
+      "quando": "2026-10-29T13:00",
+      "rubrica": "Lo sapevi?",
+      "immagini": [
+        "24-750-post.jpg"
+      ],
+      "caption": "In una bottiglia di vino ci sono 750 millilitri.\n\nVuol dire 5 o 6 calici, se versi senza riempire il bicchiere fino all'orlo. Per una cena in quattro, una bottiglia basta per il primo giro: la seconda tienila pronta.\n\nSalvalo per la prossima spesa prima di una cena.\n\n#losapevi #curiositàsulvino #cena #vinoitaliano #winelife"
+    },
+    {
+      "id": "25-primitivo",
+      "quando": "2026-10-30T18:30",
+      "rubrica": "Vino in 30 secondi",
+      "immagini": [
+        "25-primitivo-slide-1.jpg",
+        "25-primitivo-slide-2.jpg",
+        "25-primitivo-slide-3.jpg",
+        "25-primitivo-slide-4.jpg",
+        "25-primitivo-slide-5.jpg"
+      ],
+      "caption": "Primitivo, in 30 secondi: il sole della Puglia.\n\nMorbido e caldo, sa di prugna, mora e spezie. Si chiama così perché matura presto, ed è lo stesso vitigno dello Zinfandel californiano. Servilo a 16–18 °C con ragù, carne alla brace e formaggi stagionati.\n\nSalvalo per il prossimo sabato sera.\n\n#primitivo #puglia #salento #vinoitaliano #winelife"
+    },
+    {
       "id": "01-certe-bottiglie",
       "quando": "2026-10-31T18:30",
       "rubrica": "Un calice di pensieri",
