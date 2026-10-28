@@ -94,22 +94,22 @@ Dal 22/11 in poi il calendario è vuoto: i prossimi post sono da creare.
 
 ## Pubblicazione automatica: stato al 28/10/2026
 
-**Niente è ancora stato pubblicato.** Il sistema è pronto ma non configurato.
+**Niente è ancora stato pubblicato.** Il sistema è configurato e pronto: il primo post (`01-certe-bottiglie`) esce da solo sabato 31/10 alle 21:00.
 
-Come funziona: GitHub Actions (`.github/workflows/pubblica.yml`) ogni 30 minuti lancia `pubblicazione/publish.py --due`, che pubblica con la Instagram API (login Instagram, `graph.instagram.com` v23.0) i post arrivati alla loro ora. Le immagini vengono prese da `raw.githubusercontent.com/<utente>/<repo>/<branch>/pubblicazione/jpg/`, per questo **il repository deve essere pubblico**. Lo script scrive `pubblicazione/pubblicati.json` e lo committa, così nessun post esce due volte. Esce al massimo un post per giro.
+Come funziona: GitHub Actions (`.github/workflows/pubblica.yml`) ogni 30 minuti lancia `pubblicazione/publish.py --due`, che pubblica con la Instagram API (login Instagram, `graph.instagram.com` v23.0) i post arrivati alla loro ora. Le immagini vengono prese da `raw.githubusercontent.com/<utente>/<repo>/<branch>/pubblicazione/jpg/`, per questo **il repository deve essere pubblico**. Lo script scrive `pubblicazione/pubblicati.json` e lo committa, così nessun post esce due volte (per questo, prima di lavorare in locale, fai `git pull`). Esce al massimo un post per giro. Il cron di GitHub può partire anche 10–30 minuti in ritardo.
 
-Cosa manca, in ordine (lo fa Alessio, tu lo guidi):
-1. ✅ **Account Instagram professionale:** fatto, è `@winee.life` (Creator).
-2. **Token Meta:** su developers.facebook.com crea un'app Business → prodotto Instagram → "API setup with Instagram login" → aggiungi l'account → "Genera token" (permessi `instagram_business_basic` e `instagram_business_content_publish`). `IG_USER_ID` si legge da `https://graph.instagram.com/v23.0/me?fields=user_id,username&access_token=TOKEN`.
-3. ✅ **Repository GitHub pubblico:** fatto, è `carnedasosa/wine-life-instagram` (branch `main`), con il workflow attivo. I commit usano l'email noreply di GitHub, non la Gmail.
-4. **Secret del repo:** Settings → Secrets and variables → Actions → `IG_ACCESS_TOKEN` e `IG_USER_ID`.
-5. **Prova:** Actions → "Pubblica su Instagram" → Run workflow con `post` = `01-certe-bottiglie`, oppure lasciare che esca da solo sabato 31/10 alle 21:00.
+Configurazione (tutto fatto il 28/10/2026):
+1. ✅ **Account Instagram:** `@winee.life`, professionale (Creator), user_id `17841426833765805`.
+2. ✅ **App Meta:** "wine-life" (ID app `3619837411539382`, app Instagram "wine-life-IG"), in modalità sviluppo. Caso d'uso "Gestisci i messaggi e i contenuti su Instagram", permessi `instagram_business_basic` e `instagram_business_content_publish`; `winee.life` è Tester di Instagram. Il token si genera in Casi d'uso → Personalizza → "Configurazione dell'API con Instagram Login" → 2. Genera i token d'accesso → "Genera token".
+3. ✅ **Repository GitHub pubblico:** `carnedasosa/wine-life-instagram` (branch `main`), workflow attivo. I commit usano l'email noreply di GitHub, non la Gmail.
+4. ✅ **Secret del repo:** `IG_ACCESS_TOKEN` e `IG_USER_ID`, salvati con `python pubblicazione/imposta_token.py` (chiede il token senza mostrarlo, lo verifica e lo salva con `gh`; Claude non lo vede mai).
+5. ✅ **Prova a vuoto su GitHub:** Run workflow senza `post` → "Niente da pubblicare adesso". Per pubblicare subito un post: Actions → "Pubblica su Instagram" → Run workflow con `post` = id (solo con il via libera di Alessio).
 
-Il token dura 60 giorni: si rinnova con `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN` e si aggiorna il secret (promemoria ogni 50 giorni).
+**Token:** generato il 28/10/2026, dura 60 giorni (scade verso il 27/12/2026). Rinnovalo entro il **17/12/2026**: rigenera il token dalla dashboard Meta (punto 2) e rilancia `python pubblicazione/imposta_token.py`. In alternativa `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN`, poi di nuovo lo script.
 
 Alternativa senza configurazione: programmare i post dall'app Instagram (Impostazioni avanzate → Programma) usando `pubblicazione/jpg/` e `caption.md`.
 
-Prova in locale senza toccare Instagram: `python pubblicazione/publish.py --dry-run --due` oppure `--dry-run --post 04-nebbiolo`.
+Prova in locale senza toccare Instagram (su Windows metti prima `$env:PYTHONIOENCODING="utf-8"` in PowerShell, oppure `PYTHONIOENCODING=utf-8` davanti in Bash): `python pubblicazione/publish.py --dry-run --due` oppure `--dry-run --post 04-nebbiolo`.
 
 ## Regole di sicurezza
 
