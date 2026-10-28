@@ -19,6 +19,13 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 | 13 | mer 04/11 ore 18:30 | Un calice di pensieri | 1 |
 | 14 | ven 06/11 ore 13:00 | Lo sapevi? | 1 |
 | 15 | dom 08/11 ore 18:30 | Wine Life consiglia | 1 |
+| 16 | lun 09/11 ore 18:30 | Un calice di pensieri | 1 |
+| 17 | mer 11/11 ore 18:30 | Vino in 30 secondi | 5 |
+| 18 | ven 13/11 ore 18:30 | Un calice di pensieri | 1 |
+| 19 | dom 15/11 ore 18:30 | Lo sapevi? | 1 |
+| 20 | lun 16/11 ore 18:30 | Un calice di pensieri | 1 |
+| 21 | mer 18/11 ore 13:00 | Lo sapevi? | 1 |
+| 22 | ven 20/11 ore 18:30 | Wine Life consiglia | 1 |
 
 ## 01-certe-bottiglie · sab 31/10 ore 18:30
 
@@ -240,4 +247,102 @@ Cosa portare a cena da amici? Una Barbera d'Asti.
 Mandalo a chi ti ha invitato a cena questo weekend.
 
 #barbera #cenatraamici #cosaportare #vinoitaliano #winelife
+```
+
+## 16-novembre · lun 09/11 ore 18:30
+
+Immagini: `16-novembre-post.jpg`
+
+```
+A novembre ogni rosso sembra un po' più buono.
+
+Fuori fa buio presto, in cucina c'è qualcosa che cuoce da ore e la bottiglia aspetta sul tavolo. Non è il vino che cambia: è il momento.
+
+Qual è il primo rosso che apri quando arriva il freddo?
+
+#vinorosso #novembre #vinoitaliano #calicedivino #winelife
+```
+
+## 17-novello · mer 11/11 ore 18:30
+
+Immagini: `17-novello-slide-1.jpg`, `17-novello-slide-2.jpg`, `17-novello-slide-3.jpg`, `17-novello-slide-4.jpg`, `17-novello-slide-5.jpg`
+
+```
+Novello, in 30 secondi: il vino di San Martino.
+
+"A San Martino ogni mosto diventa vino." Il Novello è giovane, fruttato, sa di fragola e lampone, ed è in vendita dal 30 ottobre. Servilo a 13–14 °C con castagne e salumi, e bevilo entro qualche mese.
+
+Salvalo per la prossima castagnata.
+
+#vinonovello #sanmartino #castagne #vinoitaliano #winelife
+```
+
+## 18-versato · ven 13/11 ore 18:30
+
+Immagini: `18-versato-post.jpg`
+
+```
+Un calice versato è una conversazione già iniziata.
+
+Non serve un'occasione. Basta una bottiglia aperta e qualcuno che dice "ne versi un po' anche a me?".
+
+Manda questo post a chi stasera ti versa il primo bicchiere.
+
+#vino #conversazioni #vinoitaliano #calicedivino #winelife
+```
+
+## 19-sei-atmosfere · dom 15/11 ore 18:30
+
+Immagini: `19-sei-atmosfere-post.jpg`
+
+```
+Dentro una bottiglia di spumante metodo classico ci sono circa 6 atmosfere.
+
+È più del doppio della pressione di una gomma d'auto. Per questo il vetro è così spesso, il tappo ha la gabbietta e va aperto piano, tenendolo sempre in mano.
+
+Salvalo e raccontalo al prossimo brindisi.
+
+#losapevi #bollicine #metodoclassico #vinoitaliano #winelife
+```
+
+## 20-condividerlo · lun 16/11 ore 18:30
+
+Immagini: `20-condividerlo-post.jpg`
+
+```
+Non serve capire il vino. Basta condividerlo.
+
+Nessuno ti chiederà i sentori o l'annata. Ti ricorderanno per la bottiglia che hai aperto e per con chi l'hai bevuta.
+
+Manda questo post a chi dice sempre "io di vino non ci capisco niente".
+
+#vino #condividere #vinoitaliano #calicedivino #winelife
+```
+
+## 21-rosso-aperto · mer 18/11 ore 13:00
+
+Immagini: `21-rosso-aperto-post.jpg`
+
+```
+Un rosso aperto dura 3–5 giorni.
+
+Basta rimettere il tappo, tenere la bottiglia in piedi e al fresco, anche in frigo. Tiralo fuori mezz'ora prima di berlo. Se cambia colore o odore, è il momento di salutarlo.
+
+Salvalo per la prossima bottiglia avanzata.
+
+#losapevi #vinorosso #consiglidivino #vinoitaliano #winelife
+```
+
+## 22-regalo · ven 20/11 ore 18:30
+
+Immagini: `22-regalo-post.jpg`
+
+```
+Cosa regalare a chi ha già tutto? Una bottiglia di metodo classico.
+
+Una bollicina buona non è mai sbagliata: si apre per festeggiare, si tiene per un'occasione, si condivide subito. Servila a 6–8 °C.
+
+Mandalo a chi deve ancora fare un regalo.
+
+#regalidinatale #bollicine #metodoclassico #vinoitaliano #winelife
 ```
