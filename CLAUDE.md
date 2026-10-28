@@ -104,6 +104,9 @@ Configurazione (tutto fatto il 28/10/2026):
 3. ✅ **Repository GitHub pubblico:** `carnedasosa/wine-life-instagram` (branch `main`), workflow attivo. I commit usano l'email noreply di GitHub, non la Gmail.
 4. ✅ **Secret del repo:** `IG_ACCESS_TOKEN` e `IG_USER_ID`, salvati con `python pubblicazione/imposta_token.py` (chiede il token senza mostrarlo, lo verifica e lo salva con `gh`; Claude non lo vede mai).
 5. ✅ **Prova a vuoto su GitHub:** Run workflow senza `post` → "Niente da pubblicare adesso". Per pubblicare subito un post: Actions → "Pubblica su Instagram" → Run workflow con `post` = id (solo con il via libera di Alessio).
+6. ✅ **Verifica reale senza pubblicare (28/10):** Run workflow con `post` = id e `verifica` = true (`gh workflow run pubblica.yml -R carnedasosa/wine-life-instagram -f post=ID -f verifica=true`): Instagram scarica le immagini e prepara il post, ma non lo pubblica. Passata per `23-mercoledi` (singolo) e `25-primitivo` (carosello).
+
+Il cron gira ai minuti 7 e 37 di ogni ora (spostato dal 30/0 il 28/10 perché a quell'ora non partiva). Se un post non esce, il giro a mano senza input è sicuro: `gh workflow run pubblica.yml -R carnedasosa/wine-life-instagram` pubblica solo l'eventuale post già scaduto.
 
 **Token:** generato il 28/10/2026, dura 60 giorni (scade verso il 27/12/2026). Rinnovalo entro il **17/12/2026**: rigenera il token dalla dashboard Meta (punto 2) e rilancia `python pubblicazione/imposta_token.py`. In alternativa `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN`, poi di nuovo lo script.
 
