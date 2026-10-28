@@ -14,6 +14,8 @@ Tre post a settimana (martedì, giovedì, sabato), ora italiana. Le immagini son
 | 08 | mar 17/11 ore 19:00 | Wine Life consiglia | 1 |
 | 09 | gio 19/11 ore 18:30 | Vino in 30 secondi | 5 |
 | 10 | sab 21/11 ore 18:30 | Un calice di pensieri | 1 |
+| 11 | dom 01/11 ore 18:30 | Vino in 30 secondi | 5 |
+| 12 | lun 02/11 ore 18:30 | Un calice di pensieri | 1 |
 
 ## 01-certe-bottiglie · sab 31/10 ore 18:30
 
@@ -163,4 +165,34 @@ Lo stesso calice può essere perfetto un sabato sera e sbagliato un martedì a p
 Qual è il tuo momento giusto? Scrivilo qui sotto.
 
 #vino #winelover #momenti #calicedivino #winelife
+```
+
+## 11-sangiovese · dom 01/11 ore 18:30
+
+Immagini: `11-sangiovese-slide-1.jpg`, `11-sangiovese-slide-2.jpg`, `11-sangiovese-slide-3.jpg`, `11-sangiovese-slide-4.jpg`, `11-sangiovese-slide-5.jpg`
+
+```
+Sangiovese, in 30 secondi: il rosso d'Italia.
+
+È il rosso più coltivato del Paese, dietro Chianti Classico e Brunello di Montalcino. Rubino vivo, profuma di ciliegia e viola, ed è perfetto con il ragù della domenica.
+
+Per tutti i giorni cerca in etichetta Romagna Sangiovese.
+
+Salvalo per la prossima volta che sei davanti alla carta dei vini.
+
+#sangiovese #chianticlassico #vinoitaliano #toscana #winelife
+```
+
+## 12-chi-non-ce · lun 02/11 ore 18:30
+
+Immagini: `12-chi-non-ce-post.jpg`
+
+```
+Alcuni brindisi si fanno anche a chi non c'è.
+
+Un calice in più sulla tavola, un nome detto piano. Il vino sa tenere compagnia anche ai ricordi.
+
+Mandalo a chi stasera ha qualcuno da ricordare.
+
+#calicedivino #ricordi #vinoitaliano #momenti #winelife
 ```

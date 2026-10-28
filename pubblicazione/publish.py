@@ -96,9 +96,9 @@ def main():
     if not (args.due or args.post):
         p.error("serve --due oppure --post ID")
 
-    cal = json.loads(CALENDARIO.read_text())
+    cal = json.loads(CALENDARIO.read_text(encoding="utf-8"))
     tz = ZoneInfo(cal["fuso_orario"])
-    done = json.loads(STATO.read_text()) if STATO.exists() else {}
+    done = json.loads(STATO.read_text(encoding="utf-8")) if STATO.exists() else {}
     now = datetime.now(tz)
 
     if args.post:
@@ -127,7 +127,7 @@ def main():
         media_id = publish(post, args.dry_run)
         if media_id:
             done[post["id"]] = {"media_id": media_id, "pubblicato": datetime.now(tz).isoformat(timespec="minutes")}
-            STATO.write_text(json.dumps(done, indent=2, ensure_ascii=False) + "\n")
+            STATO.write_text(json.dumps(done, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
