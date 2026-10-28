@@ -114,5 +114,5 @@ Prova in locale senza toccare Instagram (su Windows metti prima `$env:PYTHONIOEN
 ## Regole di sicurezza
 
 - **Mai** chiedere, stampare o scrivere il token in chat, nei file del repo o nei commit. In locale va in un file `.env` (già in `.gitignore`), su GitHub solo nei Secrets.
-- **Non pubblicare nulla su Instagram** senza un via libera esplicito di Alessio per quel post.
+- **Non pubblicare nulla su Instagram** senza un via libera esplicito di Alessio per quel post. Il 28/10/2026 Alessio ha approvato l'uscita automatica dei post 01–10 secondo il calendario. I post nuovi aggiunti al calendario hanno bisogno di un nuovo via libera prima di essere committati, perché una volta su GitHub escono da soli.
 - Prima di cambiare l'ora di un post già in calendario o di cancellare un post, chiedi.
