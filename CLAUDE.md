@@ -99,9 +99,9 @@ Dal 22/11 in poi il calendario è vuoto: i prossimi post sono da creare.
 Come funziona: GitHub Actions (`.github/workflows/pubblica.yml`) ogni 30 minuti lancia `pubblicazione/publish.py --due`, che pubblica con la Instagram API (login Instagram, `graph.instagram.com` v23.0) i post arrivati alla loro ora. Le immagini vengono prese da `raw.githubusercontent.com/<utente>/<repo>/<branch>/pubblicazione/jpg/`, per questo **il repository deve essere pubblico**. Lo script scrive `pubblicazione/pubblicati.json` e lo committa, così nessun post esce due volte. Esce al massimo un post per giro.
 
 Cosa manca, in ordine (lo fa Alessio, tu lo guidi):
-1. **Account Instagram professionale** (Creator va bene, non serve Pagina Facebook).
+1. ✅ **Account Instagram professionale:** fatto, è `@winee.life` (Creator).
 2. **Token Meta:** su developers.facebook.com crea un'app Business → prodotto Instagram → "API setup with Instagram login" → aggiungi l'account → "Genera token" (permessi `instagram_business_basic` e `instagram_business_content_publish`). `IG_USER_ID` si legge da `https://graph.instagram.com/v23.0/me?fields=user_id,username&access_token=TOKEN`.
-3. **Repository GitHub pubblico** (nome previsto `wine-life-instagram`, non ancora creato) con dentro tutta questa cartella, compresa `.github/` alla radice.
+3. ✅ **Repository GitHub pubblico:** fatto, è `carnedasosa/wine-life-instagram` (branch `main`), con il workflow attivo. I commit usano l'email noreply di GitHub, non la Gmail.
 4. **Secret del repo:** Settings → Secrets and variables → Actions → `IG_ACCESS_TOKEN` e `IG_USER_ID`.
 5. **Prova:** Actions → "Pubblica su Instagram" → Run workflow con `post` = `01-certe-bottiglie`, oppure lasciare che esca da solo sabato 31/10 alle 21:00.
 
