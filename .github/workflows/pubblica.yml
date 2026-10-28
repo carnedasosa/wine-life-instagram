@@ -2,7 +2,7 @@ name: Pubblica su Instagram
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # ogni 30 minuti controlla il calendario
+    - cron: "7,37 * * * *"   # ogni 30 minuti controlla il calendario (minuti 7 e 37: meno coda che a :00 e :30)
   workflow_dispatch:
     inputs:
       post:
