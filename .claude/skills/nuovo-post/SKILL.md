@@ -8,9 +8,9 @@ description: Crea un nuovo post o carosello Wine Life completo (grafica dai temp
 Segui questi passi in ordine. Le regole di brand sono in `CLAUDE.md` e `brand-kit/brand-kit.md`: rileggile se non le hai in mente.
 
 ## 1. Scegli rubrica e slot
-- Guarda `pubblicazione/calendario.json`: trova il prossimo martedì, giovedì o sabato libero e il numero progressivo (`NN`) dopo l'ultimo.
+- Guarda `pubblicazione/calendario.json` e il piano in `~/.claude/instagram/plan.md`: si pubblica **ogni giorno**, quindi trova il prossimo giorno libero e il numero progressivo (`NN`) dopo l'ultimo. Orari: sera 18:30–19:00, i "Lo sapevi?" brevi anche alle 13:00, mai le 21:00.
 - Scegli la rubrica in modo da avvicinarti al mix 40/25/20/15 (Pensieri / Lo sapevi? / Vino in 30 secondi / Consiglia) e da **non mettere due fondi uguali uno dopo l'altro** rispetto al post precedente nel calendario.
-- Se Alessio non ha dato un tema, proponi 2–3 idee in una riga ciascuna e fai scegliere.
+- Se Alessio non ha dato un tema, usa quello del piano; se il piano non ne ha, sceglilo tu e diglielo quando consegni.
 
 ## 2. Scrivi i testi
 - Hook: max 10 parole, un'idea forte, niente punto esclamativo. Una sola parola in corsivo (`<em>`).
@@ -25,7 +25,10 @@ Segui questi passi in ordine. Le regole di brand sono in `CLAUDE.md` e `brand-ki
   - Consiglia: `consiglia-post` o `consiglia-carosello`
 - Negli HTML cambia il percorso del CSS in `../../templates/wl.css` e il `<title>`.
 - Cambia solo i testi. Caroselli: contatore `N/5` e N segmenti `class="on"` nella barra.
-- Foto: metti il file in `post/foto/` e usa `<img src="../foto/nome.jpg" alt="">` dentro `<div class="photo">`. Se manca una foto, scrivi ad Alessio il prompt da usare (vedi CLAUDE.md, sezione Foto).
+- Foto: metti il file in `post/foto/` e usa `<img src="../foto/nome.jpg" alt="">` dentro `<div class="photo">`. Se manca una foto, generala tu senza chiedere:
+  1. Canva `generate-image` con il prompt di base del brand kit adattato alla scena (`aspectRatio: PORTRAIT_4_5`, aggiungi sempre "no faces, no text, no logos"). Restituisce solo un'anteprima piccola e un id `MEDIA`.
+  2. Per il file grande usa il design Canva `DAHZTFE5ZXg` ("wine-life foto (esportazione)", 1080×1350, una sola immagine a tutta pagina): `read-design` con `open_transaction: true` → `edit-design` con `update_fill` sull'elemento `PB1ByldQYWjKQ1J6-LBpcZ4dKLsDWSLrb` e il nuovo id → `commit` → `export-design` in `jpg` 1080×1350, qualità 95.
+  3. Scarica l'URL dell'export con `curl` in `post/foto/nome.jpg` e controlla che sia 1080×1350.
 
 ## 4. Esporta e controlla
 ```
@@ -41,4 +44,4 @@ Apri **ogni** PNG generata e controlla: testo dentro i margini, font giusti (Bri
 - Verifica: `python pubblicazione/publish.py --dry-run --post NN-nome-breve`.
 
 ## 6. Consegna
-Mostra ad Alessio le PNG e la caption, e ricorda data e ora di uscita. Se il repo è su GitHub, fai commit e push solo dopo il suo ok: dal push in poi il post uscirà da solo all'ora indicata.
+Fai commit e push **senza chiedere** (deciso da Alessio il 28/10/2026), poi mostragli le PNG e la caption e ricorda data e ora di uscita. Dal push in poi il post esce da solo: se Alessio non lo vuole, lo dice prima di quell'ora e lo togli dal calendario.

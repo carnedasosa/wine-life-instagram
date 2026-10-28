@@ -33,7 +33,7 @@ Storia: la v1 (scura, oro, Bodoni) è stata scartata perché "troppo AI slop"; l
 - **Scala su 1080:** numero 380–440 px · hook 100–120 · titolo slide 76–90 · testo 40–44 · pill 28–32 · dati 24–26.
 - **Logo:** "wine life" tutto minuscolo, "wine" Bricolage 700 + "life" Instrument Serif Italic. Foto profilo: "wl" corsivo vino su cerchio rosé.
 - **Layout:** margini 80 px, allineato a sinistra, una cosa enorme per post. Hook max 10 parole, testo max 25 parole per slide. Pill rubrica in alto a sinistra, @handle in basso a sinistra, freccia o contatore in basso a destra. Uno sticker al massimo per post.
-- **Foto:** flash diretto, ombre nette, rossi saturi, grana media. Mani sì, volti mai. Prompt AI di base: `direct flash photography, wine glass, deep red, high contrast, film grain, editorial still life, no faces, 4:5`.
+- **Foto:** flash diretto, ombre nette, rossi saturi, grana media. Mani sì, volti mai. Prompt AI di base: `direct flash photography, wine glass, deep red, high contrast, film grain, editorial still life, no faces, 4:5`. Le foto le genera Claude con Canva, senza chiedere (procedura nello skill `nuovo-post`).
 - **Feed:** mai due fondi uguali adiacenti, una foto ogni due grafiche, hook leggibile anche in miniatura.
 
 Versione visiva del brand kit: `brand-kit/brand-kit.html` (aprila nel browser).
@@ -114,5 +114,5 @@ Prova in locale senza toccare Instagram (su Windows metti prima `$env:PYTHONIOEN
 ## Regole di sicurezza
 
 - **Mai** chiedere, stampare o scrivere il token in chat, nei file del repo o nei commit. In locale va in un file `.env` (già in `.gitignore`), su GitHub solo nei Secrets.
-- **Non pubblicare nulla su Instagram** senza un via libera esplicito di Alessio per quel post. Il 28/10/2026 Alessio ha approvato l'uscita automatica dei post 01–10 secondo il calendario. I post nuovi aggiunti al calendario hanno bisogno di un nuovo via libera prima di essere committati, perché una volta su GitHub escono da soli.
+- **Pubblicazione dei post (deciso da Alessio il 28/10/2026):** i post 01–10 escono in automatico secondo il calendario. I post nuovi Claude li crea, li carica su GitHub **senza chiedere** e poi li mostra ad Alessio con data e ora di uscita. Se un post non gli piace, Alessio lo dice prima di quell'ora e Claude lo toglie dal calendario. Non pubblicare mai un post subito (Run workflow con `post`) senza che Alessio lo chieda.
 - Prima di cambiare l'ora di un post già in calendario o di cancellare un post, chiedi.
