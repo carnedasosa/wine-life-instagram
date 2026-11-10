@@ -48,21 +48,49 @@ def call(method, path, **params):
         sys.exit(f"Errore API {e.code} su {path}: {e.read().decode()}")
 
 
-def wait_ready(container_id):
-    # Instagram scarica e valida l'immagine in modo asincrono.
-    for _ in range(30):
-        status = call("GET", container_id, fields="status_code")["status_code"]
+def wait_ready(container_id, tries=30, pause=5):
+    # Instagram scarica e valida l'immagine (o il video) in modo asincrono.
+    for _ in range(tries):
+        info = call("GET", container_id, fields="status_code,status")
+        status = info["status_code"]
         if status == "FINISHED":
             return
         if status in ("ERROR", "EXPIRED"):
-            sys.exit(f"Container {container_id} in stato {status}")
-        time.sleep(5)
-    sys.exit(f"Container {container_id} non pronto dopo 150 secondi")
+            sys.exit(f"Container {container_id} in stato {status}: {info.get('status', '')}")
+        time.sleep(pause)
+    sys.exit(f"Container {container_id} non pronto dopo {tries * pause} secondi")
+
+
+def publish_reel(post, user, base, dry_run, check):
+    # I Reel stanno in pubblicazione/video/, accanto a jpg/ (VIDEO_BASE_URL per cambiarlo).
+    vbase = os.environ.get("VIDEO_BASE_URL", base.rsplit("/", 1)[0] + "/video").rstrip("/")
+    video = f"{vbase}/{post['video']}"
+    cover = f"{vbase}/{post['copertina']}" if post.get("copertina") else None
+    print(f"→ {post['id']} (reel)")
+    if dry_run:
+        print(f"   {video}")
+        if cover:
+            print(f"   copertina: {cover}")
+        print("   caption: " + post["caption"].splitlines()[0])
+        return None
+    params = {"media_type": "REELS", "video_url": video, "caption": post["caption"], "share_to_feed": "true"}
+    if cover:
+        params["cover_url"] = cover
+    container = call("POST", f"{user}/media", **params)["id"]
+    wait_ready(container, tries=60, pause=10)  # i video ci mettono di più: fino a 10 minuti
+    if check:
+        print(f"   verifica ok: container {container} pronto, NON pubblicato")
+        return None
+    media_id = call("POST", f"{user}/media_publish", creation_id=container)["id"]
+    print(f"   pubblicato, media id {media_id}")
+    return media_id
 
 
 def publish(post, dry_run, check=False):
     user = os.environ.get("IG_USER_ID", "<IG_USER_ID>")
     base = os.environ.get("IMAGE_BASE_URL", "<IMAGE_BASE_URL>").rstrip("/")
+    if post.get("video"):
+        return publish_reel(post, user, base, dry_run, check)
     urls = [f"{base}/{name}" for name in post["immagini"]]
     kind = "carosello" if len(urls) > 1 else "singolo"
     print(f"→ {post['id']} ({kind}, {len(urls)} immagini)")

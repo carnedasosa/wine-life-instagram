@@ -391,3 +391,49 @@ Salvalo per il prossimo sabato sera.
 
 #primitivo #puglia #salento #vinoitaliano #winelife
 ```
+
+## 28-il-record · sab 28/11 ore 18:30 · Reel
+
+Video: `28-il-record.mp4` · copertina `28-il-record-cover.jpg`
+
+```
+Questa bottiglia è chiusa da 1.700 anni. E nessuno la apre.
+
+La chiamano "vino romano di Spira". L'hanno sigillata intorno al 325 d.C. e ritrovata nel 1867 in una tomba romana vicino a Spira, in Germania, con sopra il vino uno strato d'olio d'oliva a fare da tappo. Oggi sta in un museo. Ancora chiusa.
+
+Io non la aprirei. Tu? Sì o no, qui sotto.
+
+Foto: Immanuel Giel (CC BY-SA 3.0) e Altera levatur (CC BY-SA 4.0), Wikimedia Commons.
+
+#winelife #vinoromano #storiadelvino #curiositàsulvino #vino
+```
+
+## 29-moet · dom 29/11 ore 18:30 · Reel
+
+Video: `29-moet.mp4` · copertina `29-moet-cover.jpg`
+
+```
+Moët. Scommetto che lo dici sbagliato.
+
+Non è "Moè": la T si sente, "Moètt". Il cognome ha origini olandesi, non francesi, e la maison stessa lo pronuncia così. Chandon invece sì, alla francese: "Sciandòn".
+
+Tu come lo dicevi? Scrivilo qui sotto, senza barare.
+
+#winelife #champagne #moetchandon #comesidice #vino
+```
+
+## 26-nebbiolo-doc · lun 30/11 ore 18:30 · Reel
+
+Video: `26-nebbiolo-doc-v2.mp4` · copertina `26-nebbiolo-doc-v2-cover.jpg`
+
+```
+Chiaro nel calice, severo in bocca: il Nebbiolo non è quello che sembra.
+
+Si dice che prenda il nome dalla nebbia che a ottobre, in vendemmia, copre le Langhe. È lui che fa il Barolo: almeno 38 mesi prima di arrivare in tavola.
+
+Per iniziare senza spendere troppo, chiedi un Langhe Nebbiolo. Servilo a 16–18 °C, con un brasato.
+
+Salvalo per la prossima cena.
+
+#winelife #nebbiolo #langhe #barolo #vinopiemontese
+```
