@@ -62,7 +62,7 @@ Il trucco più semplice: dieci minuti in frigo prima di aprire il rosso. Salvalo
 #vino #consiglivino #sommelierfacile #vinoitaliano #winelife
 ```
 
-## 03-oltre-il-prosecco · mer 11/11 ore 18:30
+## 03-oltre-il-prosecco · mar 17/11 ore 18:30
 
 Immagini: `03-oltre-il-prosecco-slide-1.jpg`, `03-oltre-il-prosecco-slide-2.jpg`, `03-oltre-il-prosecco-slide-3.jpg`, `03-oltre-il-prosecco-slide-4.jpg`, `03-oltre-il-prosecco-slide-5.jpg`
 
@@ -266,7 +266,7 @@ Qual è il primo rosso che apri quando arriva il freddo?
 #vinorosso #novembre #vinoitaliano #calicedivino #winelife
 ```
 
-## 17-novello · mar 17/11 ore 18:30
+## 17-novello · mer 11/11 ore 18:30
 
 Immagini: `17-novello-slide-1.jpg`, `17-novello-slide-2.jpg`, `17-novello-slide-3.jpg`, `17-novello-slide-4.jpg`, `17-novello-slide-5.jpg`
 
@@ -392,7 +392,7 @@ Salvalo per il prossimo sabato sera.
 #primitivo #puglia #salento #vinoitaliano #winelife
 ```
 
-## 28-il-record · sab 28/11 ore 18:30 · Reel
+## 28-il-record · mar 10/11 ore 18:30 · Reel
 
 Video: `28-il-record.mp4` · copertina `28-il-record-cover.jpg`
 
