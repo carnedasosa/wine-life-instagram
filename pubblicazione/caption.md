@@ -62,7 +62,7 @@ Il trucco più semplice: dieci minuti in frigo prima di aprire il rosso. Salvalo
 #vino #consiglivino #sommelierfacile #vinoitaliano #winelife
 ```
 
-## 03-oltre-il-prosecco · gio 05/11 ore 18:30
+## 03-oltre-il-prosecco · mer 11/11 ore 18:30
 
 Immagini: `03-oltre-il-prosecco-slide-1.jpg`, `03-oltre-il-prosecco-slide-2.jpg`, `03-oltre-il-prosecco-slide-3.jpg`, `03-oltre-il-prosecco-slide-4.jpg`, `03-oltre-il-prosecco-slide-5.jpg`
 
@@ -80,7 +80,7 @@ Venerdì al bancone, scegline uno e dicci com'è andata. 🥂
 #bollicine #franciacorta #trentodoc #lambrusco #winelife
 ```
 
-## 04-nebbiolo · sab 07/11 ore 18:30
+## 04-nebbiolo · ven 13/11 ore 18:30
 
 Immagini: `04-nebbiolo-slide-1.jpg`, `04-nebbiolo-slide-2.jpg`, `04-nebbiolo-slide-3.jpg`, `04-nebbiolo-slide-4.jpg`, `04-nebbiolo-slide-5.jpg`
 
@@ -96,7 +96,7 @@ Salvalo per la prossima volta che sei davanti allo scaffale.
 #nebbiolo #barolo #barbaresco #langhe #winelife
 ```
 
-## 05-con-chi-resta · mar 10/11 ore 19:00
+## 05-con-chi-resta · lun 16/11 ore 19:00
 
 Immagini: `05-con-chi-resta-post.jpg`
 
@@ -110,7 +110,7 @@ Tagga chi resta sempre fino all'ultimo bicchiere.
 #vino #winelover #amicizia #calicedivino #winelife
 ```
 
-## 06-600-acini · gio 12/11 ore 13:00
+## 06-600-acini · mer 18/11 ore 13:00
 
 Immagini: `06-600-acini-post.jpg`
 
@@ -124,7 +124,7 @@ Salvalo e tiralo fuori alla prossima cena.
 #losapevi #curiositàsulvino #vendemmia #vinoitaliano #winelife
 ```
 
-## 07-un-viaggio · sab 14/11 ore 18:30
+## 07-un-viaggio · ven 20/11 ore 18:30
 
 Immagini: `07-un-viaggio-post.jpg`
 
@@ -138,7 +138,7 @@ Da quale posto vorresti partire stasera?
 #vino #viaggiare #vinoitaliano #territorio #winelife
 ```
 
-## 08-cena-a-due · mar 17/11 ore 19:00
+## 08-cena-a-due · lun 23/11 ore 19:00
 
 Immagini: `08-cena-a-due-post.jpg`
 
@@ -152,7 +152,7 @@ Mandalo a chi porti a cena.
 #pinotnero #cenaromantica #cosabere #vinoitaliano #winelife
 ```
 
-## 09-vermentino · gio 19/11 ore 18:30
+## 09-vermentino · mer 25/11 ore 18:30
 
 Immagini: `09-vermentino-slide-1.jpg`, `09-vermentino-slide-2.jpg`, `09-vermentino-slide-3.jpg`, `09-vermentino-slide-4.jpg`, `09-vermentino-slide-5.jpg`
 
@@ -166,7 +166,7 @@ Al prossimo aperitivo, ordinalo tu. Salvalo per non dimenticarlo.
 #vermentino #vinobianco #sardegna #liguria #winelife
 ```
 
-## 10-il-momento-giusto · sab 21/11 ore 18:30
+## 10-il-momento-giusto · ven 27/11 ore 18:30
 
 Immagini: `10-il-momento-giusto-post.jpg`
 
@@ -224,7 +224,7 @@ Manda questo post a chi non si alza mai per primo da tavola.
 #vino #tavola #vinoitaliano #calicedivino #winelife
 ```
 
-## 14-colore-buccia · ven 06/11 ore 13:00
+## 14-colore-buccia · gio 12/11 ore 13:00
 
 Immagini: `14-colore-buccia-post.jpg`
 
@@ -238,7 +238,7 @@ Salvalo e raccontalo alla prossima cena.
 #losapevi #curiositàsulvino #vinorosso #vinoitaliano #winelife
 ```
 
-## 15-cena-da-amici · dom 08/11 ore 18:30
+## 15-cena-da-amici · sab 14/11 ore 18:30
 
 Immagini: `15-cena-da-amici-post.jpg`
 
@@ -252,7 +252,7 @@ Mandalo a chi ti ha invitato a cena questo weekend.
 #barbera #cenatraamici #cosaportare #vinoitaliano #winelife
 ```
 
-## 16-novembre · lun 09/11 ore 18:30
+## 16-novembre · dom 15/11 ore 18:30
 
 Immagini: `16-novembre-post.jpg`
 
@@ -266,7 +266,7 @@ Qual è il primo rosso che apri quando arriva il freddo?
 #vinorosso #novembre #vinoitaliano #calicedivino #winelife
 ```
 
-## 17-novello · mer 11/11 ore 18:30
+## 17-novello · mar 17/11 ore 18:30
 
 Immagini: `17-novello-slide-1.jpg`, `17-novello-slide-2.jpg`, `17-novello-slide-3.jpg`, `17-novello-slide-4.jpg`, `17-novello-slide-5.jpg`
 
@@ -280,7 +280,7 @@ Salvalo per la prossima castagnata.
 #vinonovello #sanmartino #castagne #vinoitaliano #winelife
 ```
 
-## 18-versato · ven 13/11 ore 18:30
+## 18-versato · gio 19/11 ore 18:30
 
 Immagini: `18-versato-post.jpg`
 
@@ -294,7 +294,7 @@ Manda questo post a chi stasera ti versa il primo bicchiere.
 #vino #conversazioni #vinoitaliano #calicedivino #winelife
 ```
 
-## 19-sei-atmosfere · dom 15/11 ore 18:30
+## 19-sei-atmosfere · sab 21/11 ore 18:30
 
 Immagini: `19-sei-atmosfere-post.jpg`
 
@@ -308,7 +308,7 @@ Salvalo e raccontalo al prossimo brindisi.
 #losapevi #bollicine #metodoclassico #vinoitaliano #winelife
 ```
 
-## 20-condividerlo · lun 16/11 ore 18:30
+## 20-condividerlo · dom 22/11 ore 18:30
 
 Immagini: `20-condividerlo-post.jpg`
 
@@ -322,7 +322,7 @@ Manda questo post a chi dice sempre "io di vino non ci capisco niente".
 #vino #condividere #vinoitaliano #calicedivino #winelife
 ```
 
-## 21-rosso-aperto · mer 18/11 ore 13:00
+## 21-rosso-aperto · mar 24/11 ore 13:00
 
 Immagini: `21-rosso-aperto-post.jpg`
 
@@ -336,7 +336,7 @@ Salvalo per la prossima bottiglia avanzata.
 #losapevi #vinorosso #consiglidivino #vinoitaliano #winelife
 ```
 
-## 22-regalo · ven 20/11 ore 18:30
+## 22-regalo · gio 26/11 ore 18:30
 
 Immagini: `22-regalo-post.jpg`
 
