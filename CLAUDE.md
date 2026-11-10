@@ -90,7 +90,7 @@ Su Windows lo script trova da solo Chrome o Edge; altrimenti `CHROME="/percorso/
 | 09 vermentino | gio 19/11 18:30 | Vino in 30 secondi | 5 |
 | 10 il-momento-giusto | sab 21/11 18:30 | Un calice di pensieri | 1 |
 
-Dal 28/10 si pubblica ogni giorno. I post 23–25 (28, 29 e 30/10) e 11–22 (dal 1/11 al 20/11, uno per ogni giorno vuoto) sono già fatti e in calendario, quindi il primo post in assoluto è `23-mercoledi` del 28/10 alle 18:30: l'elenco completo è in `pubblicazione/caption.md` e il piano in `~/.claude/instagram/plan.md`. Dal 22/11 il calendario è vuoto: i prossimi post si creano con `/nuovo-post`.
+Dal 28/10 si pubblica ogni giorno. I post 23–25 (28, 29 e 30/10) e 11–22 (dal 1/11 al 20/11, uno per ogni giorno vuoto) sono già fatti e in calendario, quindi il primo post in assoluto è `23-mercoledi` del 28/10 alle 18:30: l'elenco completo è in `pubblicazione/caption.md` e il piano in `~/.claude/instagram/plan.md`. Il 10/11 i post non usciti sono stati spostati di 6 giorni (blocco del token), e dal 28 al 30/11 ci sono i 3 Reel. Dal 1/12 il calendario è vuoto: i prossimi post si creano con `/nuovo-post`.
 
 ## Pubblicazione automatica: stato al 28/10/2026
 
@@ -110,7 +110,9 @@ Il cron gira ai minuti 7 e 37 di ogni ora (spostato dal 30/0 il 28/10 perché a 
 
 Il cron di GitHub non è mai partito da solo (28/10): il primo post `23-mercoledi` è uscito alle 18:32 con un giro a mano. Per riserva c'è l'attività di Windows **"Wine Life - pubblica post"** (creata il 28/10 con l'ok di Alessio): ogni giorno alle 13:15, 18:45 e 19:15 lancia il giro senza input; se il PC era spento parte appena si riaccende. Per toglierla: `Unregister-ScheduledTask -TaskName "Wine Life - pubblica post"`.
 
-**Token:** generato il 28/10/2026, dura 60 giorni (scade verso il 27/12/2026). Rinnovalo entro il **17/12/2026**: rigenera il token dalla dashboard Meta (punto 2) e rilancia `python pubblicazione/imposta_token.py`. In alternativa `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN`, poi di nuovo lo script.
+**Reel (dal 10/11/2026, chiesto da Alessio):** anche i video escono in automatico. In `calendario.json` una voce Reel ha `video` (mp4 in `pubblicazione/video/`) e `copertina` (jpg 1080×1920 nella stessa cartella) al posto di `immagini`; `publish.py` la pubblica come `media_type=REELS` con `share_to_feed=true` e aspetta fino a 10 minuti che Instagram elabori il video. Prima di metterlo in `pubblicazione/video/` passa il video in `ffmpeg -i IN -c copy -movflags +faststart OUT`. Limiti: file sotto i 100 MB (limite di GitHub), H.264 + AAC, 9:16, massimo 90 s. **Ogni Reel nuovo deve passare la verifica reale** (`-f post=ID -f verifica=true`) prima della sua data: un Reel rifiutato blocca tutti i post dopo di lui. Il workflow tiene in coda un solo giro: lancia le verifiche una alla volta. Fuori per ora `27-nebbiolo-da-zero` (manca la battuta 8 della voce e pesa 109 MB).
+
+**Token:** generato il 28/10/2026, ma Meta lo ha invalidato (errore 190, probabile cambio password) e dal 5 al 10/11 non è uscito niente. Rigenerato il 10/11/2026: scade verso il 9/1/2027, rinnovalo entro il **30/12/2026**. Se i post si fermano, guarda per primi i log dei run (`gh run list -R carnedasosa/wine-life-instagram`). Per rinnovarlo: rigenera il token dalla dashboard Meta (punto 2) e rilancia `python pubblicazione/imposta_token.py`. In alternativa `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN`, poi di nuovo lo script.
 
 Alternativa senza configurazione: programmare i post dall'app Instagram (Impostazioni avanzate → Programma) usando `pubblicazione/jpg/` e `caption.md`.
 
